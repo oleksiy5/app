@@ -1,0 +1,11 @@
+<div>
+    <label><h3>{{question}}</h3></label>
+    <div *ngFor="let answer of answers">
+        <label>
+        <input type="radio" name="answer.value" [value]="answer.value" (click)="setUserAnswer(answer.isCorrect)" > 
+            {{answer.display}}      
+        </label>
+        
+    </div>
+   <font color = {{fontAnswer}}> {{userAnswer}} </font>
+</div>

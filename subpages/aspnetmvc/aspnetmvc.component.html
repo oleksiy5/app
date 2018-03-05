@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="starter-template">
+        <ngb-alert type="info" [dismissible]="false">
+            <h3>ASP.NET MVC</h3>
+            <p>Some descriptions...</p>
+            <input type="button" class="btn btn-danger" value="Get ..." (click)="changeValue()">
+            <div>
+            </div>
+        </ngb-alert>
+        <div *ngIf="isVisible">
+            <h2>ASP NET MVC</h2>
+            <p>List of video</p>
+        </div>
+    </div>
+</div>
