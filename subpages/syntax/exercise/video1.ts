@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class video1Component {
     public question = "Za co odpowiada metoda?";
     public answers = [
-        { value: 'A', display: 'Przechowanie wartość obiektu', isCorrect: false},
-        { value: 'B', display: 'Zachowanie obiektu', isCorrect: true }, 
+        { value: 'A', display: 'Za przechowanie wartość obiektu', isCorrect: false},
+        { value: 'B', display: 'Za zachowanie obiektu', isCorrect: true }, 
         { value: 'C', display: 'Jest to styl projektowania klasy', isCorrect: false }      
     ];
 
