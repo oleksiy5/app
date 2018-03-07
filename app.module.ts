@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { video1Component } from './subpages/syntax/exercise/video1';
+import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { video1Component } from './subpages/syntax/exercise/video1';
     CoursesListComponent,
     SyntaxComponent,
     AspNetMvcComponent,
-    video1Component
+    video1Component,
+    HowLearnComponent
   ],
   imports: [
     BrowserModule,
