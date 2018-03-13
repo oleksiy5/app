@@ -1,28 +1,53 @@
 <div class="container">
     <div class="starter-template">
         <ngb-alert type="info" [dismissible]="false">
-            <h3>Syntax C#</h3>
-            <p>Some descriptions...</p>
-            <input type="button" class="btn btn-danger" value="Get c.." (click)="changeValue()">
+            <h3>
+                <b>Programowanie w C#</b> - pierwsze kroki</h3>
+            <p>
+                <i> materiał przeznaczony dla początkujących osób, chcących rozpocząć swoją naukę prograowania w C# (CSharp)
+                    <br> zawiera:
+                    <b>materiały video </b> +
+                    <b>testy ABC</b>
+                </i>
+            </p>
+            <input type="button" class="btn btn-danger" value="Rozpocznij" (click)="changeValue()">
             <div>
             </div>
         </ngb-alert>
-        <div *ngIf="isVisible">
-            <h1>Składnia C#</h1>
-
-            <h2> Programowanie C# - pierwszy krok</h2>            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3wHZQYyQ2is" frameborder="0" allowfullscreen></iframe>
-
-            <h2> debug aplikacji i przydatne klawisze F5, F10, F11</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/91GDnzrsZZg" frameborder="0" allowfullscreen></iframe>
-
-
-            <h2>Metody i konstruktory</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lLTzdYvEYNA" frameborder="0" allowfullscreen></iframe>
-            <div>                
-            <exercise-video1></exercise-video1>          
-            </div>
-            
-        </div>
     </div>
+
+
+    <div *ngIf="isVisible" class="container">
+
+        <div class="card-deck mb-2 text-center">
+            <div class="card mb-2 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal"> Programowanie C# - pierwszy krok</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-deck mb-2 text-center">
+                        <div class="card mb-2 box-shadow">
+                            <iframe width="500" height="300" src="https://www.youtube.com/embed/3wHZQYyQ2is" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card mb-2 box-shadow text-left">
+                            <programowanie-c-pierwszy-krok>
+                        </programowanie-c-pierwszy-krok>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2> debug aplikacji i przydatne klawisze F5, F10, F11</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/91GDnzrsZZg" frameborder="0" allowfullscreen></iframe>
+
+
+        <h2>Metody i konstruktory</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lLTzdYvEYNA" frameborder="0" allowfullscreen></iframe>
+        <div>
+            <exercise-video1></exercise-video1>
+        </div>
+
+    </div>
+
 </div>

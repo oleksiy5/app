@@ -16,6 +16,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { video1Component } from './subpages/syntax/exercise/video1';
 import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
+import { programowanieCPierwszyKrokComponent } from './subpages/syntax/exercise/programowanie-c-pierwszy-krok';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
     SyntaxComponent,
     AspNetMvcComponent,
     video1Component,
-    HowLearnComponent
+    HowLearnComponent,
+    programowanieCPierwszyKrokComponent
   ],
   imports: [
     BrowserModule,
