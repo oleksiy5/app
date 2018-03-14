@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import {SyntaxComponent} from './subpages/syntax/syntax.component'
 
 @Component({
   selector: 'app-root',

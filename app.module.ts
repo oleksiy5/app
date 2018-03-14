@@ -18,6 +18,17 @@ import { video1Component } from './subpages/syntax/exercise/video1';
 import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
 import { programowanieCPierwszyKrokComponent } from './subpages/syntax/exercise/programowanie-c-pierwszy-krok';
 
+import {Pipe, PipeTransform, Component} from '@angular/core'
+import { DomSanitizer} from '@angular/platform-browser'
+
+@Pipe({ name: 'safe' })
+export class SafePipe implements PipeTransform {
+  constructor(private sanitizer: DomSanitizer) {}
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +38,8 @@ import { programowanieCPierwszyKrokComponent } from './subpages/syntax/exercise/
     AspNetMvcComponent,
     video1Component,
     HowLearnComponent,
-    programowanieCPierwszyKrokComponent
+    programowanieCPierwszyKrokComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

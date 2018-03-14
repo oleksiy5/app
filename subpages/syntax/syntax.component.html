@@ -19,7 +19,29 @@
 
     <div *ngIf="isVisible" class="container">
 
+   <div *ngFor="let lesson of lessons">
+  
         <div class="card-deck mb-2 text-center">
+            <div class="card mb-2 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-deck mb-2 text-center">
+                        <div class="card mb-2 box-shadow" style="height:300px;">
+                            <iframe width="100%" height="100%" frameborder="0"                             
+                                    [src]="lesson.videoUrl" allowfullscreen></iframe>
+                        </div>
+                        <div class="card mb-2 box-shadow text-left">
+                            <programowanie-c-pierwszy-krok>
+                            </programowanie-c-pierwszy-krok>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- <div class="card-deck mb-2 text-center">
             <div class="card mb-2 box-shadow">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal"> Programowanie C# - pierwszy krok</h4>
@@ -27,12 +49,12 @@
                 <div class="card-body">
                     <div class="card-deck mb-2 text-center">
                         <div class="card mb-2 box-shadow" style="height:300px;">
-                            <iframe width="90%" height="90%" src="https://www.youtube.com/embed/3wHZQYyQ2is" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3wHZQYyQ2is" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="card mb-2 box-shadow text-left">
                             <programowanie-c-pierwszy-krok>
-                        </programowanie-c-pierwszy-krok>
-                    </div>
+                            </programowanie-c-pierwszy-krok>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +68,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lLTzdYvEYNA" frameborder="0" allowfullscreen></iframe>
         <div>
             <exercise-video1></exercise-video1>
-        </div>
+        </div> -->
 
     </div>
 
