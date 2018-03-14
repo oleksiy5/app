@@ -1,11 +1,10 @@
-<div>
-    <label><h3>{{question}}</h3></label>
+<div class="card-body">
+    <label><h4>Q: {{question}}</h4></label>
     <div *ngFor="let answer of answers">
         <label>
         <input type="radio" name="answer.value" [value]="answer.value" (click)="setUserAnswer(answer.isCorrect)" > 
             {{answer.display}}      
-        </label>
-        
+        </label>            
     </div>
    <font color = {{fontAnswer}}> {{userAnswer}} </font>
 </div>

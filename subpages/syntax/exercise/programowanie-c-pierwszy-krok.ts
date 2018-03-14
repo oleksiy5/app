@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'programowanie-c-pierwszy-krok',
-  templateUrl: './programowanie-c-pierwszy-krok.html'
+  templateUrl: './q-and-a-template.html'
 })
 
 export class programowanieCPierwszyKrokComponent {

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'exercise-video1',
-  templateUrl: './video1.html'
+  templateUrl: './q-and-a-template.html'
 })
 
 export class video1Component {
