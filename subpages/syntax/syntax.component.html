@@ -38,11 +38,15 @@
                                         <label><h4>Q: {{lesson.quiz.question}}</h4></label>
                                         <div *ngFor="let answer of lesson.quiz.answers">
                                             <label>
-                                            <input type="radio" name="answer.value" [value]="answer.value" (click)="setUserAnswer(answer.isCorrect)" > 
-                                                {{answer.display}}      
+                                            <input type="radio" name="answer.value" [value]="answer.value" 
+                                            (click) ="answer.isCorrect?lesson.quiz.userAnswer='dobrze':lesson.quiz.userAnswer='źle';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
+                                                {{answer.display}}     
                                             </label>            
+                                          
                                         </div>
-                                       <font color = {{fontAnswer}}> {{userAnswer}} </font>
+                                        <!-- <p [hidden]="!lesson.quiz.userAnswe">OK</p> -->
+                                        <!-- <p [hidden]="answer.userAnswer">!</p> -->
+                                       <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
                                  </div>
                             
                             <!--<programowanie-c-pierwszy-krok>
