@@ -1,6 +1,5 @@
 import { Component, Sanitizer } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { DESTRUCTION } from 'dns';
 
 
 @Component({
@@ -45,7 +44,7 @@ export class SyntaxComponent {
     {
       title: 'Programowanie C# - pierwszy krok',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/3wHZQYyQ2is'),
-      quiz: {
+      quiz: {            
              userAnswer: "",
              fontAnswer: "",
              question: 'Programując w C#, jakie jest podstawowe narzędzie?',
@@ -60,7 +59,7 @@ export class SyntaxComponent {
     {
       title: 'debug aplikacji i przydatne klawisze F5, F10, F11',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/91GDnzrsZZg'),
-      quiz: {
+      quiz: {           
              userAnswer: "",
              fontAnswer: "",
              question: 'Co to jest debug aplikacji?',

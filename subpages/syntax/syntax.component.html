@@ -35,22 +35,18 @@
                         <div class="card mb-2 box-shadow text-left">
 
                                 <div class="card-body">
+                                    <form action="">
                                         <label><h4>Q: {{lesson.quiz.question}}</h4></label>
                                         <div *ngFor="let answer of lesson.quiz.answers">
                                             <label>
                                             <input type="radio" name="answer.value" [value]="answer.value" 
                                             (click) ="answer.isCorrect?lesson.quiz.userAnswer='dobrze':lesson.quiz.userAnswer='źle';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
                                                 {{answer.display}}     
-                                            </label>            
-                                          
+                                            </label>                                                      
                                         </div>
-                                        <!-- <p [hidden]="!lesson.quiz.userAnswe">OK</p> -->
-                                        <!-- <p [hidden]="answer.userAnswer">!</p> -->
                                        <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
-                                 </div>
-                            
-                            <!--<programowanie-c-pierwszy-krok>
-                            </programowanie-c-pierwszy-krok> -->
+                                    </form>
+                                 </div>                        
                         </div>
                     </div>
                 </div>
