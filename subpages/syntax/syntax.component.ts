@@ -13,30 +13,6 @@ export class SyntaxComponent {
     this.isVisible = !this.isVisible;
   }
 
-  public userAnswer: String;
-  public fontAnswer: String;
-  setUserAnswer(ans: boolean) {    
-      if(ans){
-          this.userAnswer = "dobrze";
-          this.fontAnswer = "green";
-      }
-      else{
-          this.userAnswer = "źle";
-          this.fontAnswer = "red";
-      }
-  }
-
-  setAnswer(ans: boolean, display: string) {    
-    if(ans){
-      display = "dobrze";
-        //this.fontAnswer = "green";
-    }
-    else{
-       display = "źle";
-       // this.fontAnswer = "red";
-    }
-}
-
   constructor(private sanitizer: DomSanitizer) {
   }
 
@@ -62,7 +38,7 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Co to jest debug aplikacji?',
+             question: 'Co to jest debug?',
              answers: [
                 { value: 'A', display: '.', isCorrect: true},
                 { value: 'B', display: '..', isCorrect: false }, 
