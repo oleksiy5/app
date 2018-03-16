@@ -110,11 +110,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Z jednej klasy ile może powstać obiektów?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Dowolna ilość', isCorrect: true},
+                { value: 'B', display: 'Tylko 1', isCorrect: false }, 
+                { value: 'C', display: 'Obiekt z klasy nie może powstać', isCorrect: false }  
             ]                                            
       } 
     } 
@@ -125,11 +125,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Za co odpowiadają metody i konstruktory?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Przechowanie danych obiektu', isCorrect: false},
+                { value: 'B', display: 'Za zachowanie obiektów', isCorrect: true }, 
+                { value: 'C', display: 'Przyśpieszają działanie kodu w klasie', isCorrect: false }  
             ]                                            
       } 
     } ,
@@ -139,11 +139,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Kiedy jest wywoływany kod konstruktora?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Nie jest wywoływany', isCorrect: false},
+                { value: 'B', display: 'W momencie zniszczenia obiektów pamięci', isCorrect: false }, 
+                { value: 'C', display: 'W momencie tworzenia się obiektu', isCorrect: true }  
             ]                                            
       } 
     } ,
@@ -153,11 +153,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Jaki będzie prawidłowy zapis zmiennej typu tekstowego?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'string msg = "jakiś tekst";', isCorrect: true},
+                { value: 'B', display: 'int msg = "ala ma kota";', isCorrect: false }, 
+                { value: 'C', display: 'char msg = \'A\';', isCorrect: false }  
             ]                                            
       } 
     } ,
@@ -167,39 +167,39 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Za co oprócz przechowywania danych mogą odpowiadać właściwości?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Jest to alternatywa dla konstruktora klasy', isCorrect: false},
+                { value: 'B', display: 'Za przechowanie danych', isCorrect: false }, 
+                { value: 'C', display: 'Za wykonanie pewnych akcji/czynności', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Ćwicz C#\'pa zmienne i właściwości',
+      title: 'Ćwicz C#\'a zmienne i właściwości',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tCw8XlSErlY'),
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Czy wartość zmiennej można przekazać do środka konstruktora?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'TAK', isCorrect: true},
+                { value: 'B', display: 'NIE', isCorrect: false }, 
+                { value: 'C', display: 'Chyba nie :)', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'modyfikatory dostępu',
+      title: 'Modyfikatory dostępu',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/CWlLCqU1GiQ'),
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Jaki modyfikator dostępu odpowiada za widoczność tylko w obrębie klasy?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'public', isCorrect: false},
+                { value: 'B', display: 'private', isCorrect: true }, 
+                { value: 'C', display: 'internal', isCorrect: false }  
             ]                                            
       } 
     } ,
@@ -207,13 +207,13 @@ export class SyntaxComponent {
       title: 'Ćwicz C#\'a modyfikatory dostępu',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c1OsY4eveGU'),
       quiz: {           
-             userAnswer: "",
-             fontAnswer: "",
-             question: '...?',
+             userAnswer: "" ,
+             fontAnswer: "" ,
+             question: 'Za co odpowiadają modyfikatory dostępu?' ,
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Przechowują dane w klasie', isCorrect: false},
+                { value: 'B', display: 'Związane są z zapisem danych do pliku', isCorrect: false }, 
+                { value: 'C', display: 'Za nadawanie poziomu dostępności do konkretnej składowej np. w klasie', isCorrect: true }  
             ]                                            
       } 
     } ,
@@ -223,11 +223,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Jaki modyfikator dostępu daje największy dostęp?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'public', isCorrect: true},
+                { value: 'B', display: 'internal', isCorrect: false }, 
+                { value: 'C', display: 'protected internal', isCorrect: false }  
             ]                                            
       } 
     } ,
@@ -237,11 +237,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Do losowania liczb służy:',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Console.GetNumber(10, 100);', isCorrect: false},
+                { value: 'B', display: 'Next random = new Next(1, 100);', isCorrect: false }, 
+                { value: 'C', display: 'Random random = new Random();', isCorrect: true }  
             ]                                            
       } 
     } ,
@@ -251,25 +251,25 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Do czego jest mi potrzebny GitHub?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Do przechowywania i kontroli wersji mojego kodu', isCorrect: true},
+                { value: 'B', display: 'Do kompilacji i publikacji aplikacji', isCorrect: false }, 
+                { value: 'C', display: 'Do dystrybucji gotowych aplikacji', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'rozwiązanie zadania końcowego cz. 2',
+      title: 'Rozwiązanie zadania końcowego cz. 2',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/WvS0T-RqBFc'),
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Jaką komendą wgrywamy zmiany do repozytorium kodu na GitHub?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'git pull <link do repo>', isCorrect: false},
+                { value: 'B', display: 'git clone <link do repo>', isCorrect: false }, 
+                { value: 'C', display: 'git push -u origin master', isCorrect: true }  
             ]                                            
       } 
     }
