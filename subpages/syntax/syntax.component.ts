@@ -68,7 +68,7 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Co wyświetli się na ekranie? <br><br> <code class="btn btn-sm btn-outline-secondary"> for (int i = 0; i < 5; i++) <br> &nbsp;&nbsp;&nbsp; Console.Write(i); </code>',
+             question: 'Co wyświetli się na ekranie? <br><br> <pre> for (int i = 0; i < 5; i++) <br> &nbsp;&nbsp;&nbsp; Console.Write(i); </pre>',
              answers: [
                 { value: 'A', display: '12345', isCorrect: false},
                 { value: 'B', display: '01234', isCorrect: true }, 
@@ -82,11 +82,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Do czego są potrzebne kolekcje?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Do przechowywania grupy obiektów/elementów', isCorrect: true},
+                { value: 'B', display: 'Do wymiany danych z bazą danych', isCorrect: false }, 
+                { value: 'C', display: 'Nazwa wzorca projektowego', isCorrect: false }  
             ]                                            
       } 
     } ,
@@ -96,11 +96,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Dlaczego z klasy powstaje obiekt?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Obiekt nie może powstać z klasy', isCorrect: false},
+                { value: 'B', display: 'Gdyż klasa to to samo co obiekt', isCorrect: false }, 
+                { value: 'C', display: 'Klasa to taka definicja, z której powstaje coś rzeczywistego', isCorrect: true }  
             ]                                            
       } 
     } ,
