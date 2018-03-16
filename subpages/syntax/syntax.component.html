@@ -36,7 +36,7 @@
 
                                 <div class="card-body">
                                     <form action="">
-                                        <label><h4>Q: {{lesson.quiz.question}}</h4></label>
+                                        <label><h4><p [innerHTML]="lesson.quiz.question"> </p> </h4></label>
                                         <div *ngFor="let answer of lesson.quiz.answers">
                                             <label>
                                             <input type="radio" name="answer.value" [value]="answer.value" 

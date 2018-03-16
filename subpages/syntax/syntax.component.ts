@@ -53,11 +53,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Do czego służą warunki?',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: 'Do iteracji', isCorrect: false},
+                { value: 'B', display: 'Do zmianny wartości w zmiennych', isCorrect: false }, 
+                { value: 'C', display: 'Pozwala uzależnić zachowanie aplikacji od pewnych wartości', isCorrect: true }  
             ]                                            
       } 
     }
@@ -68,11 +68,11 @@ export class SyntaxComponent {
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: '...?',
+             question: 'Co wyświetli się na ekranie? <br><br> <code class="btn btn-sm btn-outline-secondary"> for (int i = 0; i < 5; i++) <br> &nbsp;&nbsp;&nbsp; Console.Write(i); </code>',
              answers: [
-                { value: 'A', display: '...', isCorrect: true},
-                { value: 'B', display: '...', isCorrect: false }, 
-                { value: 'C', display: '...', isCorrect: false }  
+                { value: 'A', display: '12345', isCorrect: false},
+                { value: 'B', display: '01234', isCorrect: true }, 
+                { value: 'C', display: '1234', isCorrect: false }  
             ]                                            
       } 
     } ,
