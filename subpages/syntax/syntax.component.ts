@@ -33,7 +33,7 @@ export class SyntaxComponent {
     }
     ,
     {
-      title: 'debug aplikacji i przydatne klawisze F5, F10, F11',
+      title: 'Debug aplikacji i przydatne klawisze F5, F10, F11',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/91GDnzrsZZg'),
       quiz: {           
              userAnswer: "",
@@ -48,7 +48,7 @@ export class SyntaxComponent {
     }
     ,
     {
-      title: 'warunek "if"',
+      title: 'Warunek "if"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/dqR202ecsOI'),
       quiz: {           
              userAnswer: "",
@@ -63,7 +63,7 @@ export class SyntaxComponent {
     }
     ,
     {
-      title: 'pętle "for" i "foreach"',
+      title: 'Pętle "for" i "foreach"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/R1nBLhmOaNM'),
       quiz: {           
              userAnswer: "",
@@ -77,7 +77,7 @@ export class SyntaxComponent {
       } 
     } ,
     {
-      title: 'kolekcje np. "List"',
+      title: 'Kolekcje np. "List"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/HTg-wC_AdqA'),
       quiz: {           
              userAnswer: "",
@@ -105,7 +105,7 @@ export class SyntaxComponent {
       } 
     } ,
     {
-      title: 'Ćwiczenie Klasy i Obiekty',
+      title: 'Ćwiczenie - klasy i obiekty',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z1oAmATQjWQ'),
       quiz: {           
              userAnswer: "",
@@ -120,7 +120,7 @@ export class SyntaxComponent {
     } 
     ,
     {
-      title: 'Metody i Konstruktory',
+      title: 'Metody i konstruktory',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/4C28M_ANIIo'),
       quiz: {           
              userAnswer: "",
@@ -134,7 +134,7 @@ export class SyntaxComponent {
       } 
     } ,
     {
-      title: '[Ćwicz C#] Metody  i  Konstruktory',
+      title: '[Ćwicz C#] Metody  i  konstruktory',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/lLTzdYvEYNA'),
       quiz: {           
              userAnswer: "",
@@ -170,7 +170,7 @@ export class SyntaxComponent {
              question: 'Za co oprócz przechowywania danych mogą odpowiadać właściwości?',
              answers: [
                 { value: 'A', display: 'Jest to alternatywa dla konstruktora klasy', isCorrect: false},
-                { value: 'B', display: 'Za przechowanie danych', isCorrect: false }, 
+                { value: 'B', display: 'Właściwości mogą służyć do ukraywania pól', isCorrect: false }, 
                 { value: 'C', display: 'Za wykonanie pewnych akcji/czynności', isCorrect: true }  
             ]                                            
       } 
