@@ -17,6 +17,7 @@ import { environment } from '../environments/environment';
 import { video1Component } from './subpages/syntax/exercise/video1';
 import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
 import { programowanieCPierwszyKrokComponent } from './subpages/syntax/exercise/programowanie-c-pierwszy-krok';
+import { ContactComponent } from './subpages/contact/contact.component';
 
 import {Pipe, PipeTransform, Component} from '@angular/core'
 import { DomSanitizer} from '@angular/platform-browser'
@@ -39,7 +40,8 @@ export class SafePipe implements PipeTransform {
     video1Component,
     HowLearnComponent,
     programowanieCPierwszyKrokComponent,
-    SafePipe
+    SafePipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
