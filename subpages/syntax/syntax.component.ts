@@ -9,8 +9,13 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class SyntaxComponent {
   isVisible: boolean = false;
+  isVisibleSyntax: boolean = false;
+  
   changeValue() {
     this.isVisible = !this.isVisible;
+  }
+  changeValueSyntax(){
+    this.isVisibleSyntax = !this.isVisibleSyntax;
   }
 
   constructor(private sanitizer: DomSanitizer) {
