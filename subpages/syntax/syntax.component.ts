@@ -10,7 +10,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class SyntaxComponent {
   isVisible: boolean = false;
   isVisibleSyntax: boolean = false;
-  
+
   changeValue() {
     this.isVisible = !this.isVisible;
   }
@@ -279,7 +279,79 @@ export class SyntaxComponent {
       } 
     }
   ];
+
+    //second part
+    public lessonsSyntax: typeLessonSyntax[] = [
+      {      
+        title: 'Kolekcje',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/kcbU1eWFtjM')
+      },
+      {      
+        title: 'Konstruktor i destruktor',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/03Pu1QDTHmA')
+      },
+      {      
+        title: 'Przeciążania metod (ang. overload)',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/5OtOhmmREsw')
+      },
+      {      
+        title: 'Boxing i unboxing',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tOpFnCfnxzE')
+      },
+      {      
+        title: 'Enum',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yp7Jmq524LE')
+      },
+      {      
+        title: 'Warunki "if" oraz "switch"',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Fr35Wugoibw')
+      },
+      {      
+        title: 'Pętle',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MoMHfBvQm8g')
+      },
+      {      
+        title: 'Typy',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/oAiSVyA_u0A')
+      },
+      {      
+        title: 'Konwersja typów',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/b3da8GF82F8')
+      },
+      {      
+        title: 'Tablice',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/trfcyQIEnOI')
+      },
+      {      
+        title: 'System.IO.File',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/bAHlHAyRhks')
+      },
+      {      
+        title: 'Namespace',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MqqTb9fhK9c')
+      },
+      {      
+        title: 'Komentarze w kodzie',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/KVmSS7OpCOY')
+      }
+      ,
+      {      
+        title: 'NULL',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/xEEDauamaIM')
+      }
+      ,
+      {      
+        title: 'String',
+        videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/d3ZC0uH5820')
+      }
+    ];
 }
+
+
+export interface typeLessonSyntax {
+  title: string; videoUrl: SafeResourceUrl;
+}
+
 
 export interface typeLesson {
   title: string; videoUrl: SafeResourceUrl; quiz: typQuiz;

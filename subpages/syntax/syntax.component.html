@@ -73,7 +73,7 @@
 
     <div *ngIf="isVisibleSyntax" class="container">
 
-        <div *ngFor="let lesson of lessons">
+        <div *ngFor="let lesson of lessonsSyntax">
        
              <div class="card-deck mb-2 text-center">
                  <div class="card mb-2 box-shadow">
@@ -86,7 +86,7 @@
                                  <iframe width="100%" height="100%" frameborder="0"                             
                                          [src]="lesson.videoUrl" allowfullscreen></iframe>
                              </div>
-                             <div class="card mb-2 box-shadow text-left">
+                             <!-- <div class="card mb-2 box-shadow text-left">
      
                                      <div class="card-body">
                                          <form action="">
@@ -101,7 +101,7 @@
                                             <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
                                          </form>
                                       </div>                        
-                             </div>
+                             </div> -->
                          </div>
                      </div>
                  </div>
