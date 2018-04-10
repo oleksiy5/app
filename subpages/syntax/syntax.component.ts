@@ -285,73 +285,87 @@ export class SyntaxComponent {
       {      
         title: 'Kolekcje',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/kcbU1eWFtjM')
+        ,videoDescription: 'Kolekcje są to ... opis zostosowanie to tez wchodzi do karty ćwiczeń. Karta ćwicen do kupienia lub do kupienia jako pakiet kart cwicen'
       },
       {      
         title: 'Konstruktor i destruktor',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/03Pu1QDTHmA')
+        ,videoDescription: ''
       },
       {      
         title: 'Przeciążania metod (ang. overload)',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/5OtOhmmREsw')
+        ,videoDescription: ''
       },
       {      
         title: 'Boxing i unboxing',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tOpFnCfnxzE')
+        ,videoDescription: ''
       },
       {      
         title: 'Enum',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yp7Jmq524LE')
+        ,videoDescription: ''
       },
       {      
         title: 'Warunki "if" oraz "switch"',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Fr35Wugoibw')
+        ,videoDescription: ''
       },
       {      
         title: 'Pętle',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MoMHfBvQm8g')
+        ,videoDescription: ''
       },
       {      
         title: 'Typy',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/oAiSVyA_u0A')
+        ,videoDescription: ''
       },
       {      
         title: 'Konwersja typów',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/b3da8GF82F8')
+        ,videoDescription: ''
       },
       {      
         title: 'Tablice',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/trfcyQIEnOI')
+        ,videoDescription: ''
       },
       {      
         title: 'System.IO.File',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/bAHlHAyRhks')
+        ,videoDescription: ''
       },
       {      
         title: 'Namespace',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MqqTb9fhK9c')
+        ,videoDescription: ''
       },
       {      
         title: 'Komentarze w kodzie',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/KVmSS7OpCOY')
+        ,videoDescription: ''
       }
       ,
       {      
         title: 'NULL',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/xEEDauamaIM')
+        ,videoDescription: ''
       }
       ,
       {      
         title: 'String',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/d3ZC0uH5820')
+        ,videoDescription: ''
       }
     ];
 }
 
 
 export interface typeLessonSyntax {
-  title: string; videoUrl: SafeResourceUrl;
+  title: string; videoUrl: SafeResourceUrl; videoDescription: string
 }
-
 
 export interface typeLesson {
   title: string; videoUrl: SafeResourceUrl; quiz: typQuiz;

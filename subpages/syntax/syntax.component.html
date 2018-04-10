@@ -86,22 +86,12 @@
                                  <iframe width="100%" height="100%" frameborder="0"                             
                                          [src]="lesson.videoUrl" allowfullscreen></iframe>
                              </div>
-                             <!-- <div class="card mb-2 box-shadow text-left">
+                             <div class="card mb-2 box-shadow text-left">
      
-                                     <div class="card-body">
-                                         <form action="">
-                                             <label><h4><p [innerHTML]="lesson.quiz.question"> </p> </h4></label>
-                                             <div *ngFor="let answer of lesson.quiz.answers">
-                                                 <label>
-                                                 <input type="radio" name="answer.value" [value]="answer.value" 
-                                                 (click) ="answer.isCorrect?lesson.quiz.userAnswer='dobrze':lesson.quiz.userAnswer='źle';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
-                                                     {{answer.display}}     
-                                                 </label>                                                      
-                                             </div>
-                                            <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
-                                         </form>
+                                     <div class="card-body">                                      
+                                         <p [innerHTML]="lesson.videoDescription"> </p>
                                       </div>                        
-                             </div> -->
+                             </div>
                          </div>
                      </div>
                  </div>
