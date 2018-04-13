@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -9,6 +8,7 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
 import { SyntaxComponent } from './subpages/syntax/syntax.component';
 import { AspNetMvcComponent } from './subpages/aspnetmvc/aspnetmvc.component';
 import { routing } from './app.routes';
+
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -51,7 +51,7 @@ export class SafePipe implements PipeTransform {
     routing,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
