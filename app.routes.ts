@@ -13,7 +13,9 @@ export const routes: Routes = [
     { path: 'howlearn', component: HowLearnComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'order', component:  OrderComponent },
-    { path: 'terms', component: TermsComponent }
+    { path: 'terms', component: TermsComponent },
+    { path: '#', component: HowLearnComponent },
+    { path: '', component: HowLearnComponent },
   ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
