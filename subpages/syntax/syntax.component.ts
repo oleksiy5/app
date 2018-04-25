@@ -285,73 +285,73 @@ export class SyntaxComponent {
       {      
         title: 'Kolekcje',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/kcbU1eWFtjM')
-        ,videoDescription: 'Kolekcje są to ... opis zostosowanie to tez wchodzi do karty ćwiczeń. Karta ćwicen do kupienia lub do kupienia jako pakiet kart cwicen'
+        ,videoDescription: 'Kolekcje to struktury, które są używane do przechowywania zbiorów (jakiejś ilości) obiektów. Takie kolekcje oferują szereg funkcjonalności umożliwiające wykonywanie operacji na elementach przechowywanych w kolekcji np. sortowanie, odwołanie się, filtrowanie, dodawanie, iterowanie lub ...'
       },
       {      
         title: 'Konstruktor i destruktor',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/03Pu1QDTHmA')
-        ,videoDescription: ''
+        ,videoDescription: 'Konstruktor to inaczej metoda, która wywołuje się w momencie powstania obiektu. Konstruktorów może być wiele w jednej klasie z różnymi parametrami wejściowymi i służy do wykonania pewnych operacji, które chcemy wykonać w trakcie tworzenia obiektu np. ustawić jakieś dane w właściwościach. Destruktor to metoda bezparametrowa, która jest wywoływana w momencie niszczenia obiektu i jest on tylko jeden, w której możemy zrobić dodatkowe rzeczy na chwilę przed zniszczeniem obiektu np. zamknąć połączenie na bazę danych. Poniżej przykłady zapisu konstruktora ...'
       },
       {      
         title: 'Przeciążania metod (ang. overload)',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/5OtOhmmREsw')
-        ,videoDescription: ''
+        ,videoDescription: 'Gdy mówimy o przeciążeniu to może ono dotyczyć metod lub konstruktorów. Najprościej mówiąc przeciążenie to dublowanie tych samych metod (lub konstruktorów) ale z innymi parametrami wejściowymi (wywołania) i z trochę innym zachowaniem. Poniżej przykład, który obrazuje przeciążenie metody “DisplayName”...'
       },
       {      
         title: 'Boxing i unboxing',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tOpFnCfnxzE')
-        ,videoDescription: ''
+        ,videoDescription: 'Pojęcie boxing i unboxing wiąże się z przechodzeniem pomiędzy typami referencyjnymi a wartościowymi. Boxing - jest to konwersja typu wartościowego na typ referencyjny. Unboxing - operacja odwrotna do operacji boxing. Poniżej kod obrazujący operacje pakowania i wypakowan...'
       },
       {      
         title: 'Enum',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yp7Jmq524LE')
-        ,videoDescription: ''
+        ,videoDescription: 'Enum jest typem prostym/wartościowym (value type), który daje naszemu rozwiązaniu ścisłą kontrolę typów. Jeśli chciałbym od pewnych wartości uzależnić zachowanie aplikacji to mógłbym to zrobić opierając się na typie string lub int. Wszystko działałoby dobrze do czasu, gdy do mojego rozwiązania nie dostałaby się wartość której mój kod nie spodziewał się, dlatego że string i int mają dużo możliwości przekazania dowolnej wartości a tak dużej ilości nie jestem wstanie obsłużyć bo np. obsługuję tylko 3 wartości...'
       },
       {      
         title: 'Warunki "if" oraz "switch"',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Fr35Wugoibw')
-        ,videoDescription: ''
+        ,videoDescription: 'Instrukcja “if” daje nam więcej możliwości w zapisywaniu ilości logicznych wyrażeń niż “switch”, który może przyjmować jedną wartość. Jednak, gdy mamy do napisania dużej ilości bloków warunkowych lepiej użyć “switch”, gdyż jest instrukcją bardziej wydajniejszą niż “if”. Poniższy przykład ma dość skomplikowaną logikę, której nie moglibyśmy zapisać przy użyciu instrukcji switch...'
       },
       {      
         title: 'Pętle',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MoMHfBvQm8g')
-        ,videoDescription: ''
+        ,videoDescription: 'Pętla to taki mechanizm, który potrafi wywołać jeden blok kodu wiele razy. Innymi słowy pozwala na kilkakrotne wywołanie tego samego bloku kodu. W C# mamy do dyspozycji następujące pętle...'
       },
       {      
         title: 'Typy',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/oAiSVyA_u0A')
-        ,videoDescription: ''
+        ,videoDescription: 'Typy to takie definicje obiektów, które mówią o tym jak obiekt ma się zachowywać (metody) i jaki ma być (właściwości lub zmienne). W .NET mamy dwa rodzaje typów...'
       },
       {      
         title: 'Konwersja typów',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/b3da8GF82F8')
-        ,videoDescription: ''
+        ,videoDescription: 'Język zorientowany obiektowo taki jak C# daje możliwość stworzenia definicji  obiektu. Taka definicja to typ, która dla różnych obiektów jest inna. Może zdarzyć się tak, że będziemy potrzebowali zamienić nasz obiekt np. z typu tekstowego (string) na typ liczbowy (int). Takim przykładem może zajść w sytuacji, gdy w konsoli czytamy wartości, które podał użytkownik w postaci tekstu a my potrzebujemy ten tekst zamienić na liczby po to aby wykonać jakąś operację matematyczną. Zobaczymy poniżej przyk...'
       },
       {      
         title: 'Tablice',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/trfcyQIEnOI')
-        ,videoDescription: ''
+        ,videoDescription: 'Tablice to struktury, które potrafią przechowywać wiele elementów o tym samym typie. Na przykład tablica typu bool będzie przechowywać wartości tylko true/false. A przykładowa deklaracja takiej tablicy może wyglądać tak...'
       },
       {      
         title: 'System.IO.File',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/bAHlHAyRhks')
-        ,videoDescription: ''
+        ,videoDescription: 'Aby pracować z plikami .NET udostępnia nam klasę “File”, która oferuje szereg metod do wykonywania operacji na plikach. Klasa ta jest zlokalizowana w przestrzeni nazw (namespace) “System.IO”. Dlatego aby używać klasy file najpierw musimy zadeklarować namespace na początku pliku *.cs. Przykładowo wygląda to tak...'
       },
       {      
         title: 'Namespace',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MqqTb9fhK9c')
-        ,videoDescription: ''
+        ,videoDescription: 'Przestrzenie nazw (namespace) są nieodłącznym elementem każdego projektu. Służą do organizacji naszego kodu (inaczej klas, struktur, interfejsów) w określonej lokalizacji logicznej. Tak jak pliki są umieszczone w różnych folderach, tak nasze klasy (lub struktury, interfejsy) są rozmieszczone w takich logicznych częściach aplikacji każda z tych logicznych części ma swoją nazwę do której można się odwoływać i to są właśnie przestrzenie nazw (namespace). Jak sama nazwa wskazuje przestrzeń nazw to wirtualne miejsce gdzie znajdują się klasy (lub struktury, interfejsy). Najprościej przestrzenie nazw można porównać do nazw ulic czy...'
       },
       {      
         title: 'Komentarze w kodzie',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/KVmSS7OpCOY')
-        ,videoDescription: ''
+        ,videoDescription: 'Komentarze umieszczamy w kodzie naszej aplikacji. Ich celem jest dostarczenie dodatkowej informacji o tym co dany fragment kodu (np. metody) wykonuje lub za co jest odpowiedzialny. Jest to taki fragment tekstu, który jest dołączony do kodu aplikacji jednak kompilator go nie wykonuje. Komentowanie kodu jest dobrą praktyką programistyczną jednak należy pamiętać, że zbyt duża ilość komentarzy  może spowodować, że kod aplikacji będzie mało przejrzysty. W C# mamy trzy sposoby komentowania kodu - oto one...'
       }
       ,
       {      
         title: 'NULL',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/xEEDauamaIM')
-        ,videoDescription: ''
+        ,videoDescription: 'Null mówi, że dana zmienna nie ma referencji (powiązania) do żadnego obiektu. Jeśli nie ma referencji to zadeklarowana zmienna jest pusta (tak jakby bez obiektu)...'
       }
       ,
       {      
