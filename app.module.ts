@@ -6,6 +6,7 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { SyntaxComponent } from './subpages/syntax/syntax.component';
+import { FirstStepsComponent } from './subpages/firststeps/firststeps.component';
 import { AspNetMvcComponent } from './subpages/aspnetmvc/aspnetmvc.component';
 import { routing } from './app.routes';
 
@@ -38,6 +39,7 @@ export class SafePipe implements PipeTransform {
     AppNavbarComponent,
     CoursesListComponent,
     SyntaxComponent,
+    FirstStepsComponent,
     AspNetMvcComponent,
     video1Component,
     HowLearnComponent,
