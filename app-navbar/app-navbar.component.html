@@ -1,29 +1,27 @@
 
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"> |   Olo How  |</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
-  aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="#"> | Olo How |</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="howlearn"> | Jak się uczyć .NET | <span class="sr-only">(current)</span></a>
+        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="howlearn"> | Jak się uczyć .NET |
+          <span class="sr-only">(current)</span>
+        </a>
       </li>
-
       <li class="nav-item dropdown active" ngbDropdown>
         <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Kursy</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
           <a class="dropdown-item" href="firststeps">[C# & .NET] pierwsze kroki</a>
           <a class="dropdown-item" href="syntax">[C# & .NET] składnia C#</a>
-          <!-- <a class="dropdown-item" href="aspnetmvc">ASP.NET MVC</a>
-          <a class="dropdown-item" href="#">Angular JS</a> -->
         </div>
       </li>
 
       <li class="nav-item active">
-          <a class="nav-link" href="order"> | Zamów </a>
+        <a class="nav-link" href="order"> | Zamów </a>
       </li>
 
       <li class="nav-item active">
