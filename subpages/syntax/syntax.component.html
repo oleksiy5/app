@@ -1,60 +1,4 @@
 <div class="container">
-    <!-- <div class="starter-template">
-        <ngb-alert type="info" [dismissible]="false">
-            <h3>
-                <b>Programowanie w C#</b> - pierwsze kroki</h3>
-            <p>
-                <i> materiał przeznaczony dla początkujących osób, chcących rozpocząć swoją naukę prograowania w C# (CSharp)
-                    <br> zawiera:
-                    <b>materiały video </b> +
-                    <b>testy ABC</b>
-                </i>
-            </p>
-            <input type="button" class="btn btn-danger" value="Rozpocznij" (click)="changeValue()">
-            <div>
-            </div>
-        </ngb-alert>
-    </div>
-
-
-   <div *ngIf="isVisible" class="container">
-
-   <div *ngFor="let lesson of lessons">
-  
-        <div class="card-deck mb-2 text-center">
-            <div class="card mb-2 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
-                </div>
-                <div class="card-body">
-                    <div class="card-deck mb-2 text-center">
-                        <div class="card mb-2 box-shadow" style="height:300px;">
-                            <iframe width="100%" height="100%" frameborder="0"                             
-                                    [src]="lesson.videoUrl" allowfullscreen></iframe>
-                        </div>
-                        <div class="card mb-2 box-shadow text-left">
-
-                                <div class="card-body">
-                                    <form action="">
-                                        <label><h4><p [innerHTML]="lesson.quiz.question"> </p> </h4></label>
-                                        <div *ngFor="let answer of lesson.quiz.answers">
-                                            <label>
-                                            <input type="radio" name="answer.value" [value]="answer.value" 
-                                            (click) ="answer.isCorrect?lesson.quiz.userAnswer='dobrze':lesson.quiz.userAnswer='źle';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
-                                                {{answer.display}}     
-                                            </label>                                                      
-                                        </div>
-                                       <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
-                                    </form>
-                                 </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> -->
-
     <br><br>
     <div class="starter-template">
         <ngb-alert type="info" [dismissible]="false">
@@ -66,13 +10,144 @@
                     <b>materiały video </b> + <b>karty ćwiczeń</b>  
                 </i>
             </p>
-            <input type="button" class="btn btn-danger" value="Rozpocznij" (click)="changeValueSyntax()">
+            <!-- <input type="button" class="btn btn-danger" value="Rozpocznij" (click)="changeValueSyntax()"> -->
             <div>
             </div>
         </ngb-alert>
     </div>
 
-    <div *ngIf="isVisibleSyntax" class="container">
+
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Lekcje od 1 do 5
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div *ngFor="let lesson of lessonsSyntax | slice:0:5">       
+                <div class="card-deck mb-2 text-center">
+                    <div class="card mb-2 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow" style="height:300px;">
+                                    <iframe width="100%" height="100%" frameborder="0"                             
+                                            [src]="lesson.videoUrl" allowfullscreen></iframe>
+                                </div>
+                                <div class="card mb-2 box-shadow text-left">
+        
+                                        <div class="card-body">                                      
+                                            <p [innerHTML]="lesson.videoDescription"> </p>
+                                            <a target="_blank"  href="order" class="btn btn-danger">Zamów kartę ćwiczeń</a>
+                                           </div>
+                                       <div>
+                                       </div>         
+                               </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lekcje od 6 do 10
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <div *ngFor="let lesson of lessonsSyntax | slice:5:10">       
+                <div class="card-deck mb-2 text-center">
+                    <div class="card mb-2 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow" style="height:300px;">
+                                    <iframe width="100%" height="100%" frameborder="0"                             
+                                            [src]="lesson.videoUrl" allowfullscreen></iframe>
+                                </div>
+                                <div class="card mb-2 box-shadow text-left">
+        
+                                        <div class="card-body">                                      
+                                            <p [innerHTML]="lesson.videoDescription"> </p>
+                                            <a target="_blank"  href="order" class="btn btn-danger">Zamów kartę ćwiczeń</a>
+                                           </div>
+                                       <div>
+                                       </div>         
+                               </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Lekcje od 11 do 15
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <div *ngFor="let lesson of lessonsSyntax | slice:10:15">       
+                <div class="card-deck mb-2 text-center">
+                    <div class="card mb-2 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow" style="height:300px;">
+                                    <iframe width="100%" height="100%" frameborder="0"                             
+                                            [src]="lesson.videoUrl" allowfullscreen></iframe>
+                                </div>
+                                <div class="card mb-2 box-shadow text-left">
+        
+                                        <div class="card-body">                                      
+                                            <p [innerHTML]="lesson.videoDescription"> </p>
+                                            <a target="_blank"  href="order" class="btn btn-danger">Zamów kartę ćwiczeń</a>
+                                           </div>
+                                       <div>
+                                       </div>         
+                               </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      
+
+    <!-- <div *ngIf="isVisibleSyntax" class="container">
 
         <div *ngFor="let lesson of lessonsSyntax">
        
@@ -102,7 +177,7 @@
                  </div>
              </div>
          </div>
-         </div>
+         </div> -->
          <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <h3 class="text-muted">by Olo How</h3>
         </footer>
