@@ -15,20 +15,20 @@ export class AppNavbarComponent implements OnInit {
     //translateService.setDefaultLang('pl');
     // translateService.setDefaultLang(languageService.getLanguage());
     // translateService.use(languageService.getLanguage());
-  //   if(localStorage.getItem('lang')){
-  //     translateService.setDefaultLang(localStorage.getItem('lang'));
-  //     translateService.use(localStorage.getItem('lang'));
-  // }else {
-  //   translateService.setDefaultLang('en');
-  //   translateService.use('en');
-  //      localStorage.setItem("lang","en");
-  // }
+    var lang = localStorage.getItem('lang'); 
+    if(lang){
+      //translateService.setDefaultLang(localStorage.getItem('lang'));
+      translateService.use(localStorage.getItem('lang'));
+  }else {
+    //translateService.setDefaultLang('pl');
+    translateService.use('pl');
+       localStorage.setItem("lang","pl");
+  }
   }
   switchLanguage(language: string) {
-    //this.languageService.setLanguage(language);
     localStorage.setItem("lang",language);
-    var lang =localStorage.getItem("lang");// this.languageService.getLanguage();
-    this.translateService.setDefaultLang(lang);
+    var lang =localStorage.getItem("lang");
+    //this.translateService.setDefaultLang(lang);
     this.translateService.use(lang);
   }
 
