@@ -14,9 +14,12 @@
 <div class="card bg-dark text-white">
         <img class="card-img" src="assets/img/howlearn_title.png" alt="Card image">
         <div class="card-img-overlay">
-          <h1 class="card-title">Jak się uczyć się .NET i C# (
-                <i>CSharp</i>)</h1>
-          <p class="card-text">Jak zostać profesjonalnym programistą .NET</p>
+          <h1 class="card-title" [innerHTML]="'HowLearnNET_1' | translate">
+              <!-- Jak się uczyć się .NET i C# (<i>CSharp</i>) -->
+        </h1>
+          <p class="card-text" [innerHTML]="'HowLearnNET_2' | translate">
+              <!-- Jak zostać profesjonalnym programistą .NET -->
+            </p>
           <p class="card-text">by Olo How</p>
         </div>
       </div>
@@ -26,61 +29,65 @@
     <div class="card mb-3">
         <img class="card-img-top" src="assets/img/howlearn.png" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title"><h2> Jak się uczyć programowania?</h2></h5>
-            <!-- <p class="card-text">               
-            </p> -->
-
-               
-<div class="container"> Jeśli trafiłeś na tą stronę to zakładam, że jesteś osobą zainteresowaną nauką .NET i języka C#. Dlatego w tym materiale będę
-        chciał opowiedzieć jak uczyć się w taki sposób aby relatywnie szybko zostać profesjonalnym programistą (<i>rozpocząć pracę jako programista</i>).
+            <h5 class="card-title"><h2 [innerHTML]="'HowLearnNET_3' | translate"> 
+                <!-- Jak się uczyć programowania? -->
+            </h2></h5>
+ 
+<div class="container" [innerHTML]="'HowLearnNET_4' | translate"> 
+    <!-- Jeśli trafiłeś na tą stronę to zakładam, że jesteś osobą zainteresowaną nauką .NET i języka C#. Dlatego w tym materiale będę
+        chciał opowiedzieć jak uczyć się w taki sposób aby relatywnie szybko zostać profesjonalnym programistą (<i>rozpocząć pracę jako programista</i>). -->
     </div>
     <br>
-    <div class="container">Najpierw spróbujmy określić co zdecyduje o tym, że będziesz programistą. To pozwoli tobie kłaść nacisk na sprawy istotne.
+    <div class="container" [innerHTML]="'HowLearnNET_5' | translate">
+        <!-- Najpierw spróbujmy określić co zdecyduje o tym, że będziesz programistą. To pozwoli tobie kłaść nacisk na sprawy istotne. -->
     </div>
     <br>
-    <div class="container"> Do wyboru masz kilka możliwości lub miks tych możliwości:
-        <div class="container">
-            <br> [1] Studia informatyczne
+    <div class="container">
+           <p [innerHTML]="'HowLearnNET_6' | translate"></p>  
+        <!-- Do wyboru masz kilka możliwości lub miks tych możliwości: -->
+        <div class="container" [innerHTML]="'HowLearnNET_7' | translate">
+             <!-- <br> [1] Studia informatyczne
             <br> [2] Stacjonarny kurs programowania
             <br> [3] Indywidualna nauka
             <br> [4] Praktyka w firmie
-            <br>
+            <br> -->
         </div>
     </div>
     <br>
-    <div class="container">
-        Hmmm... jest tego trochę. No i teraz co wybrać? Bo przecież każda decyzja to koszt finansowy i czasowy. Dlatego przedstawię
-        tobie moje przemyślenia odnośnie tej sprawy, które są moją subiektywną opinnią ale mogą pomóc wejść w zawód programisty.
+    <div class="container" [innerHTML]="'HowLearnNET_8' | translate">
+        <!-- Hmmm... jest tego trochę. No i teraz co wybrać? Bo przecież każda decyzja to koszt finansowy i czasowy. Dlatego przedstawię
+        tobie moje przemyślenia odnośnie tej sprawy, które są moją subiektywną opinnią ale mogą pomóc wejść w zawód programisty. -->
     </div>
     <br>
-    <div class="container">
-        Na początku odrzucę punkt związany z studiami informatycznymi. W Polsce mamy taki pogląd, że posiadanie wykształcenia wyższego
+    <div class="container"  [innerHTML]="'HowLearnNET_9' | translate">
+        <!-- Na początku odrzucę punkt związany z studiami informatycznymi. W Polsce mamy taki pogląd, że posiadanie wykształcenia wyższego
         jest pewnym obowiązkiem, być może tak jest w pewnych zawodach. Jednak jeśli chodzi o programowanie to nie są wymagane.
         Bardzo rzadko firmy stawiają wymóg posiadania wykształcenia wyższego zatrudniając programistę. A o kwalifikacji kandydata
         do pracy decyduje poziom jego wiedzy technicznej na temat danej technologii. Dodatkowo studia trwają kilka dobrych lat
         na których uczone są rzeczy nie koniecznie przydatne do bycia programistą. Dlatego jeśli twoim celem jest dostać pracę
-        młodszego programisty za około 1.5 roku od rozpoczęcia intensywnej nauki to studia będą ci nie po drodze.
+        młodszego programisty za około 1.5 roku od rozpoczęcia intensywnej nauki to studia będą ci nie po drodze. -->
     </div>
     <br>
-    <div class="container">
-        Następnie spójrzmy na stacjonarne kursy programowania, które obiecują że zrobią z każdego programistę średnio w około 1 miesiąc.
+    <div class="container" [innerHTML]="'HowLearnNET_10' | translate">
+        <!-- Następnie spójrzmy na stacjonarne kursy programowania, które obiecują że zrobią z każdego programistę średnio w około 1 miesiąc.
         Koszt takiego kursu waha się w granicach od 3 000 zł do 10 000 zł. Taki kurs to dobra sprawa, gdyż daje możliwość poznania
         aspektów programowania w dość intensywnym trybie.
         <b> Ale uwaga!</b> grzechem tych firm jest to, że obiecują, zrobić z każdego programistę w 1 miesiąc. Przez to wypaczają
         pogląd i sposób podejścia kursantów do sprawy (
         <i>no ale takie są zasady każdej reklamy</i>). Taki kursant ma fałszywą obietnicę, że zapłacenie i odbycie kursu daje mu
-        bilet do pracy profesjonalnego programisty - co jest oczywiście błędnym przekonaniem. Kurs poprostu o tym nie zdecyduje.
+        bilet do pracy profesjonalnego programisty - co jest oczywiście błędnym przekonaniem. Kurs poprostu o tym nie zdecyduje. -->
     
     </div>
     <br>
     
-    <div class="container">No dobrze to co w takim razie decyduje o tym czy uda mi się zostać programistą? Dobre pytanie, na które trzeba dobrze odpowiedzieć
-        jeśli chcę dostać się do tego zawodu. Dlatego spróbujmy to naświetlić tak jak ta spraw wygląda.
+    <div class="container" [innerHTML]="'HowLearnNET_11' | translate">
+        <!-- No dobrze to co w takim razie decyduje o tym czy uda mi się zostać programistą? Dobre pytanie, na które trzeba dobrze odpowiedzieć
+        jeśli chcę dostać się do tego zawodu. Dlatego spróbujmy to naświetlić tak jak ta spraw wygląda. -->
     </div>
     <br>
     
-    <div class="container">
-        Przedewszystkim nauka programowania jest procesem dość żmudnym zwłaszcza na początku. Dlatego nie obejdzie się bez samodzielnej
+    <div class="container" [innerHTML]="'HowLearnNET_12' | translate">
+        <!-- Przedewszystkim nauka programowania jest procesem dość żmudnym zwłaszcza na początku. Dlatego nie obejdzie się bez samodzielnej
         nauki.
         <b> Należy postarać się aby jakość i intensywność tej nauki był wysoka, gdyż właśnie ten aspekt będzie najbardziej decydujący.</b>
         Materiały i narzędzia do nauki są dostępne w Internecie za darmo lub odpłatnie, jednak koszt ich jest stosunkowo niewielki
@@ -88,21 +95,21 @@
         i dzięki temu odchodzą koszty czasowe i finansowe związane z dojazdami lub przebywaniem w innej miejscowości. Na chwilę
         obecną nie ma takiej technologii aby wiedzę wgrać bezpośrednio do głowy, dlatego wysiłek związany z indywidualną nauką
         cię nie ominie, jednak możesz sobie umilać naukę pijąc dobrą kawę :) lub wybierając się na jakiś kurs lub darmowy programistyczny
-        event gdzie można posłuchać o sprawach technicznych i porozmawiać z ludźmi.
+        event gdzie można posłuchać o sprawach technicznych i porozmawiać z ludźmi. -->
     </div>
     <br>
-    <div class="container">
-        Indywidualna nauka to już jest dużo, jednak należy do tego dodać coś jeszcze (zrobić miks). To coś jeszcze to praca blisko
+    <div class="container" [innerHTML]="'HowLearnNET_13' | translate">
+        <!-- Indywidualna nauka to już jest dużo, jednak należy do tego dodać coś jeszcze (zrobić miks). To coś jeszcze to praca blisko
         kogoś kto jest doświadczonym programistą. I tutaj można to osiągnąć poprzez dostanie się na praktykę, gdzie będziemy
         mieli możliwość pracować blisko programistów. Taka praktyka daje zrozumienie pewnych praktycznych aspektów programowania,
-        których nie da nam indywidualna nauka.
+        których nie da nam indywidualna nauka. -->
     </div>
     <br>
-    <div class="container">
-        Podsumowując jeśli celujemy w to aby w niedługim czasie zostać profesjonalnym programistą to zdecyduje o tym
+    <div class="container" [innerHTML]="'HowLearnNET_14' | translate">
+        <!-- Podsumowując jeśli celujemy w to aby w niedługim czasie zostać profesjonalnym programistą to zdecyduje o tym
         <b>indywidualna nauka</b> plus
         <b>paromiesięczna praktyka</b> u boku doświadczonego programisty. Studia lub kursy są pomocne ale jako dodatek do wyżej
-        opisanych aspektów.
+        opisanych aspektów. -->
     </div>
            
     <br>
@@ -205,49 +212,55 @@
         <div class="card mb-3">
             <img class="card-img-top" src="assets/img/howlearn.png" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title"><h2>Czego się uczyć i jak?</h2></h5>
+                <h5 class="card-title"><h2 [innerHTML]="'HowLearnNET_15' | translate">
+                    <!-- Czego się uczyć i jak? -->
+                </h2></h5>
               
             
 <div class="container">
-
-    Jeśli już zdecydujemy się na samodzielną naukę to powinniśmy określić:
-    <div class="container">
-        <br> [1] czego się uczyć
+    <p [innerHTML]="'HowLearnNET_16' | translate"></p>
+    <!-- Jeśli już zdecydujemy się na samodzielną naukę to powinniśmy określić: -->
+    <div class="container" [innerHTML]="'HowLearnNET_17' | translate">
+        <!-- <br> [1] czego się uczyć
         <br> [2] jak się uczyć
         <br> [3] jakie wybrać materiały
-        <br>
+        <br> -->
     </div>
     <br>
 
 </div>
 
-<div class="container">
-    Czego się uczyć? Odpowiedź jest .NET i C# hmmm... ale to nie wystarczająca odpowiedź. Przecież gdy zaczniemy pracę to sama
+<div class="container" [innerHTML]="'HowLearnNET_18' | translate">
+    <!-- Czego się uczyć? Odpowiedź jest .NET i C# hmmm... ale to nie wystarczająca odpowiedź. Przecież gdy zaczniemy pracę to sama
     znajomość C# nie wystarczy, gdyż aplikacje korporacyjne są złożone z różnych komponentów, praca nad rozwojem aplikacji
-    też nie odbywa się w próżni a w pewnym środowisku gdzie obowiązują pewne zasady i narzędzia.
+    też nie odbywa się w próżni a w pewnym środowisku gdzie obowiązują pewne zasady i narzędzia. -->
 </div>
 <br>
 
 <div class="container">
-    Spróbujmy określić to czego należy nauczyć się jako podstawowe minimum aby poradzić na rozmowie kwalifikacyjnej i w pierwszych
-    miesiącach pracy. Naukę powinno się zaplanować kilko torowo aby pokryć następujące obszary:
-    <div class="container">
-        <br> [1] składnia języka c# (
+  <p [innerHTML]="'HowLearnNET_19' | translate"></p>
+    <!-- Spróbujmy określić to czego należy nauczyć się jako podstawowe minimum aby poradzić na rozmowie kwalifikacyjnej i w pierwszych
+    miesiącach pracy. Naukę powinno się zaplanować kilko torowo aby pokryć następujące obszary: -->
+    <div class="container" [innerHTML]="'HowLearnNET_20' | translate">
+        <!-- <br> [1] składnia języka c# (
         <i>C-Sharp</i>)
         <br> [2] główne biblioteki .NET (
         <i>dot net</i>)
         <br> [3] podstawy pracy z bazami danych (
         <i> MS SQL Server lub Oracle</i>)
         <br> [4] narzędzie do pracy z kodem GIT lub SVN
-        <br>
+        <br> -->
     </div>
-    <br> opanowanie ww. zagadnień są podstawą do rozpoczęcia pracy. Dodatkowo warto je rozszerzyć o zagadnienia frontendowe czyli
-    JavaScript, jQuery lub AnguarJS gdyż coraz więcej aplikacji korporacyjnych tworzy się w technologii webowej.
+    <br> 
+    <p [innerHTML]="'HowLearnNET_21' | translate"></p>
+    <!-- opanowanie ww. zagadnień są podstawą do rozpoczęcia pracy. Dodatkowo warto je rozszerzyć o zagadnienia frontendowe czyli
+    JavaScript, jQuery lub AnguarJS gdyż coraz więcej aplikacji korporacyjnych tworzy się w technologii webowej. -->
 </div>
 
 <br>
 <div class="container">
-    Przejdźmy teraz do tego jak się uczyć wyżej wymienionych zagadnień i dobrać materiały.
+        <p [innerHTML]="'HowLearnNET_22' | translate"></p>
+    <!-- Przejdźmy teraz do tego jak się uczyć wyżej wymienionych zagadnień i dobrać materiały.
     <b>Naszym celem powinno być poznanie aspektów programowania w sposób praktyczny.</b> Dobrze to brzmi ale co to dokładnie
     znaczy? Spróbujmy na to odpowiedzieć. Gdy rozpoczniesz pracę komercyjną będą przed tobą stawiane problemy opisywane przez
     analityków lub użytkowników w różny sposób a twoim zadaniem będzie zrozumienie to o co im chodzi i przełożenie na język
@@ -256,20 +269,23 @@
     zależności.
     <b> Aby sobie z tym wszystkim poradzić twoja nauka powinna być ukierunkowana na zrozumienie poszczególnych aspektów programowania.
         </b>
-    Innymi słowy powinieneś się uczyć w taki sposób aby rozumieć jak coś działa i do czego jest to potrzebne.
+    Innymi słowy powinieneś się uczyć w taki sposób aby rozumieć jak coś działa i do czego jest to potrzebne. 
     <br>
-    <br> Dlatego materiały do nauki powinny być tak dobrane aby:
+    <br>--> 
+    <p [innerHTML]="'HowLearnNET_23' | translate"></p>
+     <!-- Dlatego materiały do nauki powinny być tak dobrane aby: 
     <br>
-    <br>
-    <div class="container">
-        [1] wyjaśniały zagadnienia
+    <br>-->
+    <div class="container" [innerHTML]="'HowLearnNET_24' | translate">
+        <!-- [1] wyjaśniały zagadnienia
         <br> [2] pokazywały przykłady
         <br> [3] opowiedziały do czego praktycznie to jest używane
         <br> [4] zawierały ćwiczenia w formie zadań praktycznych*
         <br> [5] oferowały możliwość weryfikacji czy zadanie zostało dobrze rozwiązane
-        <br>
+        <br> -->
     </div>
-    <br>
+    <p [innerHTML]="'HowLearnNET_25' | translate"></p>
+   <!--  <br>
     <b>*</b>mówiąc o zadaniach praktyczne mam myśli zadania, w których są stawiane problemy a my musimy napisać kod lub zmodyfikować
     część kodu aplikacji, który rozwiązuje postawione problemy. Rozwiązywanie takich zadań świetnie pokazuje na ile rozumiemy
     pewne zagadnienia i może kwalifikować nas do tego czy już nadajemy się na rozpoczęcie pracy jako programista.
@@ -279,7 +295,7 @@
     <br> Dodatkowo fajnie gdy kursy czy materiały do nauki kończą się napisaniem większego projektu ćwiczeniowego, który obejmuje
     dość sporo zagadnień praktycznych. Taki projekt oprócz tego, że sprawdza nasze umiejętności w odnalezieniu się w roli
     programisty to dodatkowo można go wgrać na GitHub'a a link udostępnić w naszym CV. Co będzie ułatwiało przejście rozmów
-    kwalifikacyjnych.
+    kwalifikacyjnych. -->
 </div>
 
                 <br>
@@ -379,16 +395,18 @@
         <div class="card mb-3">
             <img class="card-img-top" src="assets/img/howlearn.png" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title"><h2>Podejście do praktyki i rekrutacji</h2></h5>
+                <h5 class="card-title"><h2 [innerHTML]="'HowLearnNET_26' | translate">
+                    <!-- Podejście do praktyki i rekrutacji -->
+                </h2></h5>
               
-                <div class="container">
-                    Po roku intensywnej nauki należałoby postarać się o praktykę w firmie. Dobrze jest trafić do projektu gdzie będziemy mieli
+                <div class="container" [innerHTML]="'HowLearnNET_27' | translate">
+                    <!-- Po roku intensywnej nauki należałoby postarać się o praktykę w firmie. Dobrze jest trafić do projektu gdzie będziemy mieli
                     szansę pisać kod pod nadzorem doświadczonych programistów. Jednak z tym bywa różnie często zdarza się tak, że dostajemy
                     zadanie nie związane z programowaniem np. testowanie. Dlatego warto pytać na spotkaniu kwalifikacyjnym o nasze przyszłe
                     zadania i możliwości rozwoju. Pamiętajmy rozwój polega na zdobywaniu nowych doświadczeń, które w przyszłości powinny
                     nam dać szanse na lepiej płatną pracę. Również praktyka nie oznacza, że przestajemy uczyć się indywidualnie po godzinach.
                     Uczyć się trzeba cały czas, czy to mając praktykę czy pracując w zawodzie. Taki jest zawód programisty, rozwiązania i
-                    technologie zmieniają się i należy za tym nadążyć bo w przeciwnym razie z czasem będzie ciężko o dobrze płatną pracę.
+                    technologie zmieniają się i należy za tym nadążyć bo w przeciwnym razie z czasem będzie ciężko o dobrze płatną pracę. -->
                 </div>
 
 
