@@ -21,10 +21,23 @@ export class FirstStepsComponent {
   constructor(private sanitizer: DomSanitizer) {
   }
 
+  addIframe(id) {
+    var div = document.getElementById(id);
+    div.innerHTML = "<iframe frameborder = \"0\" allowfullscreen = \"1\" src=\"https://www.youtube.com/embed/_ID_?autoplay=1\"></iframe>\");".replace("_ID_",id);
+  // var iframe = o.getElementsByTagName("iframe");// document.createElement("iframe");
+    // alert(o);
+    // var embed = "https://www.youtube.com/embed/TNaMEtZ6ld4?autoplay=1";
+    // iframe.setAttribute("src", embed);
+    // iframe.setAttribute("frameborder", "0");
+    // iframe.setAttribute("allowfullscreen", "1");
+   // o.appendChild(iframe);//"<iframe src=\"https://www.youtube.com/embed/TNaMEtZ6ld4?autoplay=1\"></iframe>");
+}
+
   public lessons: typeLesson[] = [
     {      
       title: 'Programowanie C# - pierwszy krok',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/3wHZQYyQ2is'),
+      videoID: "3wHZQYyQ2is",
       quiz: {            
              userAnswer: "",
              fontAnswer: "",
@@ -40,6 +53,7 @@ export class FirstStepsComponent {
     {
       title: 'Debug aplikacji i przydatne klawisze F5, F10, F11',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/91GDnzrsZZg'),
+      videoID: "91GDnzrsZZg",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -55,6 +69,7 @@ export class FirstStepsComponent {
     {
       title: 'Warunek "if"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/dqR202ecsOI'),
+      videoID: "dqR202ecsOI",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -70,6 +85,7 @@ export class FirstStepsComponent {
     {
       title: 'Pętle "for" i "foreach"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/R1nBLhmOaNM'),
+      videoID: "R1nBLhmOaNM",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -84,6 +100,7 @@ export class FirstStepsComponent {
     {
       title: 'Kolekcje np. "List"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/HTg-wC_AdqA'),
+      videoID: "HTg-wC_AdqA",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -98,6 +115,7 @@ export class FirstStepsComponent {
     {
       title: 'Klasy i Obiekty - na przykładzie',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/TNaMEtZ6ld4'),
+      videoID: "TNaMEtZ6ld4",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -112,6 +130,7 @@ export class FirstStepsComponent {
     {
       title: 'Ćwiczenie - klasy i obiekty',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z1oAmATQjWQ'),
+      videoID: "Z1oAmATQjWQ",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -127,6 +146,7 @@ export class FirstStepsComponent {
     {
       title: 'Metody i konstruktory',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/4C28M_ANIIo'),
+      videoID: "4C28M_ANIIo",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -141,6 +161,7 @@ export class FirstStepsComponent {
     {
       title: '[Ćwicz C#] Metody  i  konstruktory',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/lLTzdYvEYNA'),
+      videoID: "lLTzdYvEYNA",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -155,6 +176,7 @@ export class FirstStepsComponent {
     {
       title: 'Zmienne',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z6ZpYuUZ8zI'),
+      videoID: "Z6ZpYuUZ8zI",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -169,6 +191,7 @@ export class FirstStepsComponent {
     {
       title: 'Właściwości',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/69XAF6YAEwk'),
+      videoID: "69XAF6YAEwk",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -183,6 +206,7 @@ export class FirstStepsComponent {
     {
       title: 'Ćwicz C#\'a zmienne i właściwości',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tCw8XlSErlY'),
+      videoID: "tCw8XlSErlY",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -197,6 +221,7 @@ export class FirstStepsComponent {
     {
       title: 'Modyfikatory dostępu',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/CWlLCqU1GiQ'),
+      videoID: "CWlLCqU1GiQ",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -211,6 +236,7 @@ export class FirstStepsComponent {
     {
       title: 'Ćwicz C#\'a modyfikatory dostępu',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c1OsY4eveGU'),
+      videoID: "c1OsY4eveGU",
       quiz: {           
              userAnswer: "" ,
              fontAnswer: "" ,
@@ -225,6 +251,7 @@ export class FirstStepsComponent {
     {
       title: 'Rozwiązanie zadania z video Ćwicz C#\'a modyfikatory dostępu"',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/iwRu2_Z8xzU'),
+      videoID: "iwRu2_Z8xzU",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -239,6 +266,7 @@ export class FirstStepsComponent {
     {
       title: 'Zadanie końcowe',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/jL9_9xTqqlg'),
+      videoID: "jL9_9xTqqlg",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -253,6 +281,7 @@ export class FirstStepsComponent {
     {
       title: 'Rozwiązanie zadania końcowego cz. 1',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c2N4JB8d5lo'),
+      videoID: "c2N4JB8d5lo",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -267,6 +296,7 @@ export class FirstStepsComponent {
     {
       title: 'Rozwiązanie zadania końcowego cz. 2',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/WvS0T-RqBFc'),
+      videoID: "WvS0T-RqBFc",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -360,7 +390,7 @@ export class FirstStepsComponent {
         ,videoDescription: '<b>String</b> reprezentuje dane tekstowe. Zmienna o typie string jest typem referencyjnym i może zawierać dowolne dane tekstowe. W .NET za dane tekstowe odpowiada klasa <b>System.String</b>. Jednak w praktyce posługujemy się zapisem skróconym string. Praca z string’iem wiąże się z wykonywaniem wielu różnych operacji na tekście. Dodatkowo należy być zaznajomionym z często używaną klasą <b> StringBuilder </b>, która oferuję więcej możliwości niż podstawowa klasa string. Szczególnie przydaje się, gdy musimy pracować z tekstem w wielu iteracjach (<i>w pętli</i>).        '
       }
     ];
-}
+ }
 
 
 export interface typeLessonSyntax {
@@ -368,7 +398,7 @@ export interface typeLessonSyntax {
 }
 
 export interface typeLesson {
-  title: string; videoUrl: SafeResourceUrl; quiz: typQuiz;
+  title: string; videoUrl: SafeResourceUrl; videoID: string; quiz: typQuiz;
 }
 
 export interface typQuiz

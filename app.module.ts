@@ -56,7 +56,7 @@ export class SafePipe implements PipeTransform {
     SafePipe,
     ContactComponent,
     OrderComponent,
-    TermsComponent
+    TermsComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +72,7 @@ export class SafePipe implements PipeTransform {
         useFactory: translateHttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    })    
   ],
   providers: [LanguageService],
   bootstrap: [AppComponent]

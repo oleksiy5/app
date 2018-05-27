@@ -17,6 +17,12 @@
         </ngb-alert>
     </div>
 
+    <!-- <div class="youtube-player" (click)="addIframe('TNaMEtZ6ld4')" id="TNaMEtZ6ld4">
+
+            <img src="https://i.ytimg.com/vi/TNaMEtZ6ld4/hqdefault.jpg">
+            <div class="play"></div>
+    </div> -->
+
 
    <div *ngIf="isVisible" class="container">
 
@@ -30,8 +36,27 @@
                 <div class="card-body">
                     <div class="card-deck mb-2 text-center">
                         <div class="card mb-2 box-shadow" style="height:300px;">
-                            <iframe width="100%" height="100%" frameborder="0"                             
-                                    [src]="lesson.videoUrl" allowfullscreen></iframe>
+                            <!-- <iframe width="100%" height="100%" frameborder="0"                             
+                                    [src]="lesson.videoUrl" allowfullscreen></iframe> -->
+
+                            <div class="youtube-player" (click)="addIframe(lesson.videoID)" [id]="lesson.videoID">                            
+                                <img src="https://i.ytimg.com/vi/{{lesson.videoID}}/mqdefault.jpg">
+                                <!-- Default Thumbnail
+                                http://img.youtube.com/vi/<insert-youtube-video-id-here>/default.jpg
+                                High Quality Thumbnail
+                                http://img.youtube.com/vi/<insert-youtube-video-id-here>/hqdefault.jpg
+                                Medium Quality
+                                http://img.youtube.com/vi/<insert-youtube-video-id-here>/mqdefault.jpg
+                                Standard Definition
+                                http://img.youtube.com/vi/<insert-youtube-video-id-here>/sddefault.jpg
+                                Maximum Resolution
+                                http://img.youtube.com/vi/<insert-youtube-video-id-here>/maxresdefault.jpg -->
+                                
+
+                                <div class="play"></div>
+                            </div>
+
+
                         </div>
                         <div class="card mb-2 box-shadow text-left">
 
