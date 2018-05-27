@@ -23,14 +23,7 @@ export class FirstStepsComponent {
 
   addIframe(id) {
     var div = document.getElementById(id);
-    div.innerHTML = "<iframe frameborder = \"0\" allowfullscreen = \"1\" src=\"https://www.youtube.com/embed/_ID_?autoplay=1\"></iframe>\");".replace("_ID_",id);
-  // var iframe = o.getElementsByTagName("iframe");// document.createElement("iframe");
-    // alert(o);
-    // var embed = "https://www.youtube.com/embed/TNaMEtZ6ld4?autoplay=1";
-    // iframe.setAttribute("src", embed);
-    // iframe.setAttribute("frameborder", "0");
-    // iframe.setAttribute("allowfullscreen", "1");
-   // o.appendChild(iframe);//"<iframe src=\"https://www.youtube.com/embed/TNaMEtZ6ld4?autoplay=1\"></iframe>");
+    div.innerHTML = "<iframe width=\"100%\" height=\"100%\" frameborder = \"0\" allowfullscreen = \"1\" src=\"https://www.youtube.com/embed/_ID_?autoplay=1\"></iframe>\");".replace("_ID_",id);
 }
 
   public lessons: typeLesson[] = [
