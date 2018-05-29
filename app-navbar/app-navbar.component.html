@@ -8,22 +8,22 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-          <a class="nav-link" href="howlearn"> | Jak się uczyć .NET</a>
+          <a class="nav-link" href="howlearn" [innerHTML]="'Menu_1' | translate"></a>
       </li>
       <li class="nav-item dropdown active" ngbDropdown>
-        <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle> | Kursy</a>
+        <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle [innerHTML]="'Menu_2' | translate"></a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-          <a class="dropdown-item" href="firststeps">C# pierwsze kroki</a>
-          <a class="dropdown-item" href="syntax">C# składnia</a>
+          <a class="dropdown-item" href="firststeps" [innerHTML]="'Menu_2_1' | translate"></a>
+          <a class="dropdown-item" href="syntax" [innerHTML]="'Menu_2_2' | translate"></a>
         </div>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="order"> | Zamów </a>
+        <a class="nav-link" href="order" [innerHTML]="'Menu_3' | translate"></a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="contact"> | Kontakt |</a>
+        <a class="nav-link" href="contact" [innerHTML]="'Menu_4' | translate"></a>
       </li>     
     </ul>
 
