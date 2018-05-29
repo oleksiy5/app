@@ -18,7 +18,7 @@ export class AppNavbarComponent implements OnInit {
       translateService.use(localStorage.getItem('lang'));
     } 
     else {
-      translateService.use('pl');
+      //translateService.use('pl');
       localStorage.setItem("lang", "pl");
     }
   }
@@ -26,7 +26,7 @@ export class AppNavbarComponent implements OnInit {
   switchLanguage(language: string) {
     localStorage.setItem("lang", language);
     var lang = localStorage.getItem("lang");
-    this.translateService.setDefaultLang(lang);
+    //this.translateService.setDefaultLang(lang);
     this.translateService.use(lang);
     // console.log(lang);
   }
