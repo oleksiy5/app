@@ -2,27 +2,13 @@
         <br><br>
     <div class="starter-template">
         <ngb-alert type="info" [dismissible]="false">
-            <h3>
-                <b>Programowanie w C#</b> - pierwsze kroki</h3>
-            <p>
-                <i> materiał przeznaczony dla początkujących osób, chcących rozpocząć swoją naukę prograowania w C# (CSharp)
-                    <br> zawiera:
-                    <b>materiały video </b> +
-                    <b>testy ABC</b>
-                </i>
-            </p>
-            <input type="button" class="btn btn-danger" value="Rozpocznij" (click)="changeValue()">
+            <h3 [innerHTML]="'FirstSteps_1' | translate"></h3>
+            <p [innerHTML]="'FirstSteps_2' | translate"></p>
+            <input type="button" class="btn btn-danger" [value]="'FirstSteps_3' | translate" (click)="changeValue()" translate>
             <div>
             </div>
         </ngb-alert>
     </div>
-
-    <!-- <div class="youtube-player" (click)="addIframe('TNaMEtZ6ld4')" id="TNaMEtZ6ld4">
-
-            <img src="https://i.ytimg.com/vi/TNaMEtZ6ld4/hqdefault.jpg">
-            <div class="play"></div>
-    </div> -->
-
 
    <div *ngIf="isVisible" class="container">
 

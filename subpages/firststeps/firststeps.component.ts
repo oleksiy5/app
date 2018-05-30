@@ -44,17 +44,17 @@ export class FirstStepsComponent {
     }
     ,
     {
-      title: 'Debug aplikacji i przydatne klawisze F5, F10, F11',
+      title: 'FirstSteps_9',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/91GDnzrsZZg'),
       videoID: "91GDnzrsZZg",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Co to jest debug aplikacji?',
+             question: 'FirstSteps_10',
              answers: [
-                { value: 'A', display: 'Proces poszukiwania błędów', isCorrect: true},
-                { value: 'B', display: 'To z angielskiego the bug [de-bug]', isCorrect: false }, 
-                { value: 'C', display: 'Domena aplikacji rozproszonych', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_11', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_12', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_13', isCorrect: false }  
             ]                                            
       } 
     }
