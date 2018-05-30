@@ -31,13 +31,11 @@
         <div class="card-deck mb-2 text-center">
             <div class="card mb-2 box-shadow">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">{{lesson.title}}</h4>
+                    <h4 class="my-0 font-weight-normal" translate>{{lesson.title}}</h4>
                 </div>
                 <div class="card-body">
                     <div class="card-deck mb-2 text-center">
-                        <div class="card mb-2 box-shadow" >  <!-- style="height:300px;" -->
-                            <!-- <iframe width="100%" height="100%" frameborder="0"                             
-                                    [src]="lesson.videoUrl" allowfullscreen></iframe> -->
+                        <div class="card mb-2 box-shadow" > 
 
                             <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID)" [id]="lesson.videoID">                            
                                 <img src="https://i.ytimg.com/vi/{{lesson.videoID}}/mqdefault.jpg">
@@ -62,15 +60,15 @@
 
                                 <div class="card-body">
                                     <form action="">
-                                        <label><h4><p [innerHTML]="lesson.quiz.question"> </p> </h4></label>
+                                        <label><h4><p [innerHTML]="lesson.quiz.question | translate"> </p> </h4></label>
                                         <div *ngFor="let answer of lesson.quiz.answers">
-                                            <label>
+                                            <label translate>
                                             <input type="radio" name="answer.value" [value]="answer.value" 
-                                            (click) ="answer.isCorrect?lesson.quiz.userAnswer='dobrze':lesson.quiz.userAnswer='źle';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
+                                            (click) ="answer.isCorrect?lesson.quiz.userAnswer='FirstSteps_OK':lesson.quiz.userAnswer='FirstSteps_BAD';answer.isCorrect?lesson.quiz.fontAnswer='green':lesson.quiz.fontAnswer='red'" > 
                                                 {{answer.display}}     
                                             </label>                                                      
                                         </div>
-                                       <font color = {{lesson.quiz.fontAnswer}}> {{lesson.quiz.userAnswer}} </font>
+                                       <font color = {{lesson.quiz.fontAnswer}} translate> {{lesson.quiz.userAnswer}} </font>
                                     </form>
                                  </div>                        
                         </div>

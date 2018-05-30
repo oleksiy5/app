@@ -28,17 +28,17 @@ export class FirstStepsComponent {
 
   public lessons: typeLesson[] = [
     {      
-      title: 'Programowanie C# - pierwszy krok',
+      title: 'FirstSteps_4',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/3wHZQYyQ2is'),
       videoID: "3wHZQYyQ2is",
       quiz: {            
              userAnswer: "",
              fontAnswer: "",
-             question: 'Programując w C#, jakie jest podstawowe narzędzie?',
+             question: 'FirstSteps_5',
              answers: [
-                { value: 'A', display: 'Google', isCorrect: false},
-                { value: 'B', display: 'Notatnik', isCorrect: false }, 
-                { value: 'C', display: 'Visual Studio', isCorrect: true }  
+                 { value: 'A', display: 'FirstSteps_6', isCorrect: false},
+                 { value: 'B', display: 'FirstSteps_7', isCorrect: false }, 
+                 { value: 'C', display: 'FirstSteps_8', isCorrect: true }  
             ]                                            
       } 
     }
