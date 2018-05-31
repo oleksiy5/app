@@ -101,7 +101,7 @@ export class FirstStepsComponent {
              answers: [
                 { value: 'A', display: 'FirstSteps_26', isCorrect: true},
                 { value: 'B', display: 'FirstSteps_27', isCorrect: false }, 
-                { value: 'C', display: '', isCorrect: false }  
+                { value: 'C', display: 'FirstSteps_28', isCorrect: false }  
             ]                                            
       } 
     } ,
