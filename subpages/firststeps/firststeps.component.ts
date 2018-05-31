@@ -60,244 +60,244 @@ export class FirstStepsComponent {
     }
     ,
     {
-      title: 'Warunek "if"',
+      title: 'FirstSteps_14',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/dqR202ecsOI'),
       videoID: "dqR202ecsOI",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Do czego służą warunki?',
+             question: 'FirstSteps_15',
              answers: [
-                { value: 'A', display: 'Do iteracji', isCorrect: false},
-                { value: 'B', display: 'Do zmianny wartości w zmiennych', isCorrect: false }, 
-                { value: 'C', display: 'Pozwala uzależnić zachowanie aplikacji od pewnych wartości', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_16', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_17', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_18', isCorrect: true }  
             ]                                            
       } 
     }
     ,
     {
-      title: 'Pętle "for" i "foreach"',
+      title: 'FirstSteps_19',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/R1nBLhmOaNM'),
       videoID: "R1nBLhmOaNM",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Co wyświetli się na ekranie? <br><br> <pre> for (int i = 0; i < 5; i++) <br> &nbsp;&nbsp;&nbsp; Console.Write(i); </pre>',
+             question: 'FirstSteps_20',
              answers: [
-                { value: 'A', display: '12345', isCorrect: false},
-                { value: 'B', display: '01234', isCorrect: true }, 
-                { value: 'C', display: '1234', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_21', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_22', isCorrect: true }, 
+                { value: 'C', display: 'FirstSteps_23', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Kolekcje np. "List"',
+      title: 'FirstSteps_24',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/HTg-wC_AdqA'),
       videoID: "HTg-wC_AdqA",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Do czego są potrzebne kolekcje?',
+             question: 'FirstSteps_25',
              answers: [
-                { value: 'A', display: 'Do przechowywania grupy obiektów/elementów', isCorrect: true},
-                { value: 'B', display: 'Do wymiany danych z bazą danych', isCorrect: false }, 
-                { value: 'C', display: 'Nazwa wzorca projektowego', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_26', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_27', isCorrect: false }, 
+                { value: 'C', display: '', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Klasy i Obiekty - na przykładzie',
+      title: 'FirstSteps_29',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/TNaMEtZ6ld4'),
       videoID: "TNaMEtZ6ld4",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Dlaczego z klasy powstaje obiekt?',
+             question: 'FirstSteps_30',
              answers: [
-                { value: 'A', display: 'Obiekt nie może powstać z klasy', isCorrect: false},
-                { value: 'B', display: 'Gdyż klasa to to samo co obiekt', isCorrect: false }, 
-                { value: 'C', display: 'Klasa to taka definicja, z której powstaje coś rzeczywistego', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_31', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_32', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_33', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Ćwiczenie - klasy i obiekty',
+      title: 'FirstSteps_34',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z1oAmATQjWQ'),
       videoID: "Z1oAmATQjWQ",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Z jednej klasy ile może powstać obiektów?',
+             question: 'FirstSteps_35',
              answers: [
-                { value: 'A', display: 'Dowolna ilość', isCorrect: true},
-                { value: 'B', display: 'Tylko 1', isCorrect: false }, 
-                { value: 'C', display: 'Obiekt z klasy nie może powstać', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_36', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_37', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_38', isCorrect: false }  
             ]                                            
       } 
     } 
     ,
     {
-      title: 'Metody i konstruktory',
+      title: 'FirstSteps_39',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/4C28M_ANIIo'),
       videoID: "4C28M_ANIIo",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Za co odpowiadają metody i konstruktory?',
+             question: 'FirstSteps_40',
              answers: [
-                { value: 'A', display: 'Przechowanie danych obiektu', isCorrect: false},
-                { value: 'B', display: 'Za zachowanie obiektów', isCorrect: true }, 
-                { value: 'C', display: 'Przyśpieszają działanie kodu w klasie', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_41', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_42', isCorrect: true }, 
+                { value: 'C', display: 'FirstSteps_43', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: '[Ćwicz C#] Metody  i  konstruktory',
+      title: 'FirstSteps_44',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/lLTzdYvEYNA'),
       videoID: "lLTzdYvEYNA",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Kiedy jest wywoływany kod konstruktora?',
+             question: 'FirstSteps_45',
              answers: [
-                { value: 'A', display: 'Nie jest wywoływany', isCorrect: false},
-                { value: 'B', display: 'W momencie zniszczenia obiektów pamięci', isCorrect: false }, 
-                { value: 'C', display: 'W momencie tworzenia się obiektu', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_46', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_47', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_48', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Zmienne',
+      title: 'FirstSteps_49',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z6ZpYuUZ8zI'),
       videoID: "Z6ZpYuUZ8zI",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Jaki będzie prawidłowy zapis zmiennej typu tekstowego?',
+             question: 'FirstSteps_50',
              answers: [
-                { value: 'A', display: 'string msg = "jakiś tekst";', isCorrect: true},
-                { value: 'B', display: 'int msg = "ala ma kota";', isCorrect: false }, 
-                { value: 'C', display: 'char msg = \'A\';', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_51', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_52', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_53', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Właściwości',
+      title: 'FirstSteps_54',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/69XAF6YAEwk'),
       videoID: "69XAF6YAEwk",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Za co oprócz przechowywania danych mogą odpowiadać właściwości?',
+             question: 'FirstSteps_55',
              answers: [
-                { value: 'A', display: 'Jest to alternatywa dla konstruktora klasy', isCorrect: false},
-                { value: 'B', display: 'Właściwości mogą służyć do ukraywania pól', isCorrect: false }, 
-                { value: 'C', display: 'Za wykonanie pewnych akcji/czynności', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_56', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_57', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_58', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Ćwicz C#\'a zmienne i właściwości',
+      title: 'FirstSteps_59',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tCw8XlSErlY'),
       videoID: "tCw8XlSErlY",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Czy wartość zmiennej można przekazać do środka konstruktora?',
+             question: 'FirstSteps_60',
              answers: [
-                { value: 'A', display: 'TAK', isCorrect: true},
-                { value: 'B', display: 'NIE', isCorrect: false }, 
-                { value: 'C', display: 'Chyba nie :)', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_61', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_62', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_63', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Modyfikatory dostępu',
+      title: 'FirstSteps_64',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/CWlLCqU1GiQ'),
       videoID: "CWlLCqU1GiQ",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Jaki modyfikator dostępu odpowiada za widoczność tylko w obrębie klasy?',
+             question: 'FirstSteps_65',
              answers: [
-                { value: 'A', display: 'public', isCorrect: false},
-                { value: 'B', display: 'private', isCorrect: true }, 
-                { value: 'C', display: 'internal', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_66', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_67', isCorrect: true }, 
+                { value: 'C', display: 'FirstSteps_68', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Ćwicz C#\'a modyfikatory dostępu',
+      title: 'FirstSteps_69',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c1OsY4eveGU'),
       videoID: "c1OsY4eveGU",
       quiz: {           
              userAnswer: "" ,
              fontAnswer: "" ,
-             question: 'Za co odpowiadają modyfikatory dostępu?' ,
+             question: 'FirstSteps_70' ,
              answers: [
-                { value: 'A', display: 'Przechowują dane w klasie', isCorrect: false},
-                { value: 'B', display: 'Związane są z zapisem danych do pliku', isCorrect: false }, 
-                { value: 'C', display: 'Za nadawanie poziomu dostępności do konkretnej składowej np. w klasie', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_71', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_72', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_73', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Rozwiązanie zadania z video Ćwicz C#\'a modyfikatory dostępu"',
+      title: 'FirstSteps_74',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/iwRu2_Z8xzU'),
       videoID: "iwRu2_Z8xzU",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Jaki modyfikator dostępu daje największy dostęp?',
+             question: 'FirstSteps_75',
              answers: [
-                { value: 'A', display: 'public', isCorrect: true},
-                { value: 'B', display: 'internal', isCorrect: false }, 
-                { value: 'C', display: 'protected internal', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_76', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_77', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_78', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Zadanie końcowe',
+      title: 'FirstSteps_79',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/jL9_9xTqqlg'),
       videoID: "jL9_9xTqqlg",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Do losowania liczb służy:',
+             question: 'FirstSteps_80',
              answers: [
-                { value: 'A', display: 'Console.GetNumber(10, 100);', isCorrect: false},
-                { value: 'B', display: 'Next random = new Next(1, 100);', isCorrect: false }, 
-                { value: 'C', display: 'Random random = new Random();', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_81', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_82', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_83', isCorrect: true }  
             ]                                            
       } 
     } ,
     {
-      title: 'Rozwiązanie zadania końcowego cz. 1',
+      title: 'FirstSteps_84',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c2N4JB8d5lo'),
       videoID: "c2N4JB8d5lo",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Do czego jest mi potrzebny GitHub?',
+             question: 'FirstSteps_85',
              answers: [
-                { value: 'A', display: 'Do przechowywania i kontroli wersji mojego kodu', isCorrect: true},
-                { value: 'B', display: 'Do kompilacji i publikacji aplikacji', isCorrect: false }, 
-                { value: 'C', display: 'Do dystrybucji gotowych aplikacji', isCorrect: false }  
+                { value: 'A', display: 'FirstSteps_86', isCorrect: true},
+                { value: 'B', display: 'FirstSteps_87', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_88', isCorrect: false }  
             ]                                            
       } 
     } ,
     {
-      title: 'Rozwiązanie zadania końcowego cz. 2',
+      title: 'FirstSteps_89',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/WvS0T-RqBFc'),
       videoID: "WvS0T-RqBFc",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
-             question: 'Jaką komendą wgrywamy zmiany do repozytorium kodu na GitHub?',
+             question: 'FirstSteps_90',
              answers: [
-                { value: 'A', display: 'git pull <link do repo>', isCorrect: false},
-                { value: 'B', display: 'git clone <link do repo>', isCorrect: false }, 
-                { value: 'C', display: 'git push -u origin master', isCorrect: true }  
+                { value: 'A', display: 'FirstSteps_91', isCorrect: false},
+                { value: 'B', display: 'FirstSteps_92', isCorrect: false }, 
+                { value: 'C', display: 'FirstSteps_93', isCorrect: true }  
             ]                                            
       } 
     }
