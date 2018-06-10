@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-//import {LanguageService} from '../app.languageService';
+import {LanguageService} from '../app.languageService';
 
 @Component({
   selector: 'app-navbar',
@@ -9,17 +9,18 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppNavbarComponent implements OnInit {
 
-  //constructor() { }
 
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService, private languageService:LanguageService) {
 
     var lang = localStorage.getItem('lang');
     if (lang) {
       translateService.use(localStorage.getItem('lang'));
+      languageService.lang = lang;
     } 
     else {
       //translateService.use('pl');
       localStorage.setItem("lang", "pl");
+      languageService.lang = 'pl';
     }
   }
 
@@ -28,11 +29,12 @@ export class AppNavbarComponent implements OnInit {
     var lang = localStorage.getItem("lang");
     //this.translateService.setDefaultLang(lang);
     this.translateService.use(lang);
+    this.languageService.lang = lang;
     // console.log(lang);
   }
 
   ngOnInit() {
-
+    
   }
 
 }

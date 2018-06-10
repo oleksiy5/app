@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'order',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class OrderComponent{
-  
+
+    constructor(private translateService: TranslateService) {
+        //this.lang = localStorage.getItem('lang');
+      } 
+    getCurrentLang(){
+        return this.translateService.currentLang;
+    }
 }

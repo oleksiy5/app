@@ -3,6 +3,10 @@ import {Injectable} from "@angular/core";
 @Injectable()
 export class LanguageService{
     
+    public lang : string;
+
+    
+
     // getLanguage():string{
     //     if (localStorage){
     //         return localStorage['lang'] || "pl";
