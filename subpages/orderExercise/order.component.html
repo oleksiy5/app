@@ -184,10 +184,6 @@
                 </ul>
 
                 <div *ngIf="getCurrentLang() == 'pl'" class="container">                
-                    <!-- <button type="button" class="btn btn-lg btn-block btn-primary" translate>Order_26
-                        <br>
-                        <b translate>Order_27</b>
-                    </button> -->
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="DSTA9ZRW24APJ">
@@ -230,10 +226,6 @@
                 </ul>
 
                 <div *ngIf="getCurrentLang() == 'pl'" class="container">   
-                <!--<button type="button" class="btn btn-lg btn-block btn-primary" translate>Order_35
-                    <br>
-                     <b translate>Order_36</b>
-                </button> -->
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="WW9KR4YDK5MM6">
@@ -255,7 +247,7 @@
             </div>
         </div>
 
-        <div class="card mb-4 box-shadow" *ngIf="getCurrentLang() == 'pl'">
+        <div class="card mb-4 box-shadow">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal" [innerHTML]="'Order_37' | translate"></h4>
             </div>
@@ -269,17 +261,24 @@
                     <li translate>Order_42</li>
                     <li translate>Order_43</li>
                 </ul>
-<!--                <button type="button" class="btn btn-lg btn-block btn-primary" translate>Order_44
-                    <br>
-                     <b translate>Order_45</b>
-                </button> -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="CHLLW2B2D3BH6">
-                    <input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – Płać wygodnie i bezpiecznie">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-                    
+                <div *ngIf="getCurrentLang() == 'pl'" class="container">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="CHLLW2B2D3BH6">
+                        <input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – Płać wygodnie i bezpiecznie">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                    
+                </div>
+
+                <div *ngIf="getCurrentLang() == 'en'" class="container">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="BAHX2X7B4HE2Q">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                        
+                </div>
+
             </div>
         </div>
        
