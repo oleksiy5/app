@@ -1,6 +1,6 @@
 import { Component, Sanitizer } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'firststeps-courses',
@@ -18,19 +18,27 @@ export class FirstStepsComponent {
     this.isVisibleSyntax = !this.isVisibleSyntax;
   }
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, private translateService: TranslateService) {
   }
 
   addIframe(id) {
     var div = document.getElementById(id);
     div.innerHTML = "<iframe width=\"100%\" height=\"100%\" frameborder = \"0\" allowfullscreen = \"1\" src=\"https://www.youtube.com/embed/_ID_?autoplay=1\"></iframe>\");".replace("_ID_",id);
-}
+  }
+
+  getCurrentLang(){
+    return this.translateService.currentLang;
+    }
+
+
+
 
   public lessons: typeLesson[] = [
     {      
       title: 'FirstSteps_4',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/3wHZQYyQ2is'),
       videoID: "3wHZQYyQ2is",
+      videoID_EN: "xgiY08wniMg",
       quiz: {            
              userAnswer: "",
              fontAnswer: "",
@@ -47,6 +55,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_9',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/91GDnzrsZZg'),
       videoID: "91GDnzrsZZg",
+      videoID_EN: "MfbLm3ujNA0",
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -63,6 +72,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_14',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/dqR202ecsOI'),
       videoID: "dqR202ecsOI",
+      videoID_EN: "jcHr6vpC2Hc",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -79,6 +89,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_19',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/R1nBLhmOaNM'),
       videoID: "R1nBLhmOaNM",
+      videoID_EN: "WEf_r6d5eWQ",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -94,6 +105,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_24',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/HTg-wC_AdqA'),
       videoID: "HTg-wC_AdqA",
+      videoID_EN: "KXtfUt-Orbc",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -109,6 +121,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_29',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/TNaMEtZ6ld4'),
       videoID: "TNaMEtZ6ld4",
+      videoID_EN: "a3AoKdq3eOg",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -124,6 +137,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_34',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z1oAmATQjWQ'),
       videoID: "Z1oAmATQjWQ",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -140,6 +154,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_39',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/4C28M_ANIIo'),
       videoID: "4C28M_ANIIo",
+      videoID_EN: "04Pk9VLNcp8",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -155,6 +170,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_44',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/lLTzdYvEYNA'),
       videoID: "lLTzdYvEYNA",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -170,6 +186,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_49',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Z6ZpYuUZ8zI'),
       videoID: "Z6ZpYuUZ8zI",
+      videoID_EN: "BZLYpRK5NBk",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -185,6 +202,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_54',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/69XAF6YAEwk'),
       videoID: "69XAF6YAEwk",
+      videoID_EN: "ue0nWhtTrec",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -200,6 +218,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_59',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tCw8XlSErlY'),
       videoID: "tCw8XlSErlY",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -215,6 +234,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_64',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/CWlLCqU1GiQ'),
       videoID: "CWlLCqU1GiQ",
+      videoID_EN: "h1rmRMpnBxk",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -230,6 +250,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_69',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c1OsY4eveGU'),
       videoID: "c1OsY4eveGU",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "" ,
              fontAnswer: "" ,
@@ -245,6 +266,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_74',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/iwRu2_Z8xzU'),
       videoID: "iwRu2_Z8xzU",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -260,6 +282,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_79',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/jL9_9xTqqlg'),
       videoID: "jL9_9xTqqlg",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -275,6 +298,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_84',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/c2N4JB8d5lo'),
       videoID: "c2N4JB8d5lo",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -290,6 +314,7 @@ export class FirstStepsComponent {
       title: 'FirstSteps_89',
       videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/WvS0T-RqBFc'),
       videoID: "WvS0T-RqBFc",
+      videoID_EN: "",      
       quiz: {           
              userAnswer: "",
              fontAnswer: "",
@@ -391,7 +416,7 @@ export interface typeLessonSyntax {
 }
 
 export interface typeLesson {
-  title: string; videoUrl: SafeResourceUrl; videoID: string; quiz: typQuiz;
+  title: string; videoUrl: SafeResourceUrl; videoID: string; videoID_EN: string, quiz: typQuiz;
 }
 
 export interface typQuiz
