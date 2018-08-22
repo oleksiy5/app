@@ -365,21 +365,21 @@ export class SyntaxComponent {
         title: 'Syntax_26',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/bAHlHAyRhks')
         ,videoID: "bAHlHAyRhks"
-        ,videoID_EN: ""
+        ,videoID_EN: "K9aMNNYFMxE"
         ,videoDescription: 'Syntax_27'
       },
       {      
         title: 'Syntax_28',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MqqTb9fhK9c')
         ,videoID: "MqqTb9fhK9c"
-        ,videoID_EN: ""
+        ,videoID_EN: "69PoV5-aoSo"
         ,videoDescription: 'Syntax_29'
       },
       {      
         title: 'Syntax_30',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/KVmSS7OpCOY')
         ,videoID: "KVmSS7OpCOY"
-        ,videoID_EN: ""
+        ,videoID_EN: "aPFIqiVMJtU"
         ,videoDescription: 'Syntax_31'
       }
       ,
@@ -387,7 +387,7 @@ export class SyntaxComponent {
         title: 'Syntax_32',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/xEEDauamaIM')
         ,videoID: "xEEDauamaIM"
-        ,videoID_EN: ""
+        ,videoID_EN: "2tLIrD7fiRI"
         ,videoDescription: 'Syntax_33'
       }
       ,
@@ -395,7 +395,7 @@ export class SyntaxComponent {
         title: 'Syntax_34',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/d3ZC0uH5820')
         ,videoID: "d3ZC0uH5820"
-        ,videoID_EN: ""
+        ,videoID_EN: "IxWmXykt-mU"
         ,videoDescription: 'Syntax_35'
       }
     ];
