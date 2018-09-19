@@ -21,6 +21,7 @@ import { programowanieCPierwszyKrokComponent } from './subpages/syntax/exercise/
 import { ContactComponent } from './subpages/contact/contact.component';
 import { OrderComponent } from './subpages/orderExercise/order.component';
 import { TermsComponent } from './subpages/termsuse/terms.component';
+import { HighPerformComponent } from './subpages/highperform/highperform.component';
 
 import {Pipe, PipeTransform, Component} from '@angular/core'
 import { DomSanitizer} from '@angular/platform-browser'
@@ -57,6 +58,7 @@ export class SafePipe implements PipeTransform {
     ContactComponent,
     OrderComponent,
     TermsComponent,
+    HighPerformComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,187 @@
+<div class="container">
+
+    <div class="starter-template">
+        <ngb-alert type="info" [dismissible]="false">
+            <h3 [innerHTML]="'HP_1' | translate"></h3>
+            <p [innerHtml]="'HP_2' | translate"></p>
+            <br>
+            <input type="button" class="btn btn-danger" value="\/ \/ \/ \/ ">
+
+            <div>
+            </div>
+            <br>
+        </ngb-alert>
+
+soon ...
+        <br>
+        <!-- <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <b translate>Syntax_3</b>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div *ngFor="let lesson of lessonsSyntax | slice:0:5">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal" translate>{{lesson.title}}</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-deck mb-2 text-center">
+                                            <div class="card mb-2 box-shadow" style="height:300px;">
+                                                
+                                            <div *ngIf="getCurrentLang() == 'pl'" class="container">
+                                                <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID)" [id]="lesson.videoID">
+                                                    <img src="https://i.ytimg.com/vi/{{lesson.videoID}}/mqdefault.jpg">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+
+                                            <div *ngIf="getCurrentLang() == 'en'" class="container">
+                                                <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID_EN)" [id]="lesson.videoID_EN">
+                                                    <img src="https://i.ytimg.com/vi/{{lesson.videoID_EN}}/mqdefault.jpg">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                            <div class="card mb-2 box-shadow text-left">
+
+                                                <div class="card-body">
+                                                    <p [innerHTML]="lesson.videoDescription | translate"> </p>
+                                                    <a target="_blank" href="order" class="btn btn-danger" translate>Syntax_Order</a>
+                                                </div>
+                                                <div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <b translate>Syntax_4</b>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div *ngFor="let lesson of lessonsSyntax | slice:5:10">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal" translate>{{lesson.title}}</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-deck mb-2 text-center">
+                                            <div class="card mb-2 box-shadow" style="height:300px;">
+                                                <div *ngIf="getCurrentLang() == 'pl'" class="container">
+                                                    <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID)" [id]="lesson.videoID">
+                                                        <img src="https://i.ytimg.com/vi/{{lesson.videoID}}/mqdefault.jpg">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>   
+                                                <div *ngIf="getCurrentLang() == 'en'" class="container">
+                                                        <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID_EN)" [id]="lesson.videoID_EN">
+                                                            <img src="https://i.ytimg.com/vi/{{lesson.videoID_EN}}/mqdefault.jpg">
+                                                            <div class="play"></div>
+                                                        </div>
+                                                    </div>                                         
+                                            </div>
+                                            <div class="card mb-2 box-shadow text-left">
+
+                                                <div class="card-body">
+                                                    <p [innerHTML]="lesson.videoDescription | translate"> </p>
+                                                    <a target="_blank" href="order" class="btn btn-danger" translate>Syntax_Order</a>
+                                                </div>
+                                                <div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <b translate>Syntax_5</b>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div *ngFor="let lesson of lessonsSyntax | slice:10:15">
+                            <div class="card-deck mb-2 text-center">
+                                <div class="card mb-2 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal" translate>{{lesson.title}}</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-deck mb-2 text-center">
+                                            <div class="card mb-2 box-shadow" style="height:300px;">
+                                                <div *ngIf="getCurrentLang() == 'pl'" class="container">
+                                                    <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID)" [id]="lesson.videoID">
+                                                        <img src="https://i.ytimg.com/vi/{{lesson.videoID}}/mqdefault.jpg">
+                                                        <div class="play"></div>
+                                                    </div>
+                                                </div>   
+                                                <div *ngIf="getCurrentLang() == 'en'" class="container">
+                                                        <div class="youtube-player" width="100%" height="100%" (click)="addIframe(lesson.videoID_EN)" [id]="lesson.videoID_EN">
+                                                            <img src="https://i.ytimg.com/vi/{{lesson.videoID_EN}}/mqdefault.jpg">
+                                                            <div class="play"></div>
+                                                        </div>
+                                                    </div>       
+                                            </div>
+                                            <div class="card mb-2 box-shadow text-left">
+
+                                                <div class="card-body">
+                                                    <p [innerHTML]="lesson.videoDescription | translate"> </p>
+                                                    <a target="_blank" href="order" class="btn btn-danger" translate>Syntax_Order</a>
+                                                </div>
+                                                <div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+  
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <h3 class="text-muted">by Olo How</h3>
+    </footer> 
+
+</div>

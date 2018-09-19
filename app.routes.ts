@@ -7,6 +7,7 @@ import { HowLearnComponent } from './subpages/howlearn/howlearn.component';
 import { ContactComponent } from './subpages/contact/contact.component';
 import { OrderComponent } from './subpages/orderExercise/order.component';
 import { TermsComponent } from './subpages/termsuse/terms.component';
+import { HighPerformComponent } from './subpages/highperform/highperform.component';
 
 export const routes: Routes = [
     { path: 'syntax', component: SyntaxComponent },
@@ -18,6 +19,7 @@ export const routes: Routes = [
     { path: 'terms', component: TermsComponent },
     { path: '#', component: HowLearnComponent },
     { path: '', component: HowLearnComponent },
+    { path: 'highperform', component: HighPerformComponent },
   ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
