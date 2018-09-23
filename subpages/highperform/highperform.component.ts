@@ -31,39 +31,39 @@ export class HighPerformComponent {
   }
     public lessonsSyntax: typeLessonSyntax[] = [
       {      
-        title: 'Syntax_6',
+        title: 'HP_V_1',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/kcbU1eWFtjM')
-        ,videoID: "kcbU1eWFtjM"
-        ,videoID_EN: "eyASoSkNGJY"
-        ,videoDescription: 'Syntax_7'
+        ,videoID: "kn7m7oFHVO8"
+        ,videoID_EN: "kn7m7oFHVO8"
+        ,videoDescription: 'HP_D_1'
       },
       {      
-        title: 'Syntax_8',
+        title: 'HP_V_2',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/03Pu1QDTHmA')
-        ,videoID: "03Pu1QDTHmA"
-        ,videoID_EN: "q1feV-RR57U"
-        ,videoDescription: 'Syntax_9'
+        ,videoID: "n7IN9XoG2EA"
+        ,videoID_EN: "n7IN9XoG2EA"
+        ,videoDescription: 'HP_D_2'
       },
       {      
-        title: 'Syntax_10',
+        title: 'HP_V_3',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/5OtOhmmREsw')
-        ,videoID: "5OtOhmmREsw"
-        ,videoID_EN: "8BYwhRBJdwI"
-        ,videoDescription: 'Syntax_11'
+        ,videoID: "ieMYEBOyzHc"
+        ,videoID_EN: "ieMYEBOyzHc"
+        ,videoDescription: 'HP_D_3'
       },
       {      
-        title: 'Syntax_12',
+        title: 'HP_V_4',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tOpFnCfnxzE')
-        ,videoID: "tOpFnCfnxzE"
-        ,videoID_EN: "F3yYL8300Uk"
-        ,videoDescription: 'Syntax_13'
+        ,videoID: "aNDbPK83u5Q"
+        ,videoID_EN: "aNDbPK83u5Q"
+        ,videoDescription: 'HP_D_4'
       },
       {      
-        title: 'Syntax_14',
+        title: 'HP_V_5',
         videoUrl: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/yp7Jmq524LE')
-        ,videoID: "yp7Jmq524LE"
-        ,videoID_EN: "s-fxogt0J1A"
-        ,videoDescription: 'Syntax_15'
+        ,videoID: "F53n6rOcRUY"
+        ,videoID_EN: "F53n6rOcRUY"
+        ,videoDescription: 'HP_D_5'
       },
       {      
         title: 'Syntax_16',
