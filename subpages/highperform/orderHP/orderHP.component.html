@@ -38,7 +38,6 @@
 
     </div>
 
-
     <br>
 
  
@@ -140,123 +139,29 @@
 
     </div>
 
-    <!-- <div class="card-deck mb-3 text-center">
+    <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
             <div class="card-header">
-                <h4 class="my-0 font-weight-normal" [innerHTML]="'Order_19' | translate"></h4>
+                <h4 class="my-0 font-weight-normal" translate>HP_C_4</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title" translate>Order_20
-                    <small class="text-muted" translate>Order_21</small>
+                <h1 class="card-title pricing-card-title" translate>HP_C_5
+                    <small class="text-muted" translate>HP_C_6</small>
                 </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li translate>Order_22</li>
-                    <li translate>Order_23</li>
-                    <li translate>Order_24</li>
-                    <li translate>Order_25</li>
-                </ul>
-
-                <div *ngIf="getCurrentLang() == 'pl'" class="container">                
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="DSTA9ZRW24APJ">
-                        <input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – Płać wygodnie i bezpiecznie">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                         
-                </div>
-
-                <div *ngIf="getCurrentLang() == 'en'" class="container">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-                        ">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                        
-                        
-                        
-                                                                                         
-                </div>
-
-            </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal"  [innerHTML]="'Order_28' | translate"></h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title" translate>Order_29
-                    <small class="text-muted" translate>Order_30</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li translate>Order_31</li>
-                    <li translate>Order_32</li>
-                    <li translate>Order_33</li>
-                    <li translate>Order_34</li>
-                </ul>
-
-                <div *ngIf="getCurrentLang() == 'pl'" class="container">   
+            
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="WW9KR4YDK5MM6">
-                    <input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – Płać wygodnie i bezpiecznie">
+                    <input type="hidden" name="hosted_button_id" value="VLXQ9BZED8ZF4">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </form>
-                </div>
-
-                <div *ngIf="getCurrentLang() == 'en'" class="container">   
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="V2RCV8K4Z8TBG">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>                        
-                </div>
                     
 
             </div>
         </div>
 
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal" [innerHTML]="'Order_37' | translate"></h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title" translate>Order_38
-                    <small class="text-muted" translate>Order_39</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li translate>Order_40</li>
-                    <li translate>Order_41</li>
-                    <li translate>Order_42</li>
-                    <li translate>Order_43</li>
-                </ul>
-                <div *ngIf="getCurrentLang() == 'pl'" class="container">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="CHLLW2B2D3BH6">
-                        <input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – Płać wygodnie i bezpiecznie">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>                    
-                </div>
-
-                <div *ngIf="getCurrentLang() == 'en'" class="container">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="BAHX2X7B4HE2Q">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>                        
-                </div>
-
-            </div>
-        </div>
-       
-
-    </div> -->
+    
+    </div>
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <h3 class="text-muted">by Olo How</h3>
     </footer>
