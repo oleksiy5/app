@@ -10,6 +10,7 @@ import { TermsComponent } from './subpages/termsuse/terms.component';
 import { HighPerformComponent } from './subpages/highperform/highperform.component';
 import { OrderHPComponent } from './subpages/highperform/orderHP/orderHP.component';
 import { HadoopComponent } from './subpages/hadoop/hadoop.component';
+import { OrderHadoopComponent } from './subpages/hadoop/orderHadoop/orderHadoop.component';
 
 export const routes: Routes = [
     { path: 'syntax', component: SyntaxComponent },
@@ -23,7 +24,8 @@ export const routes: Routes = [
     { path: '', component: HowLearnComponent },
     { path: 'highperform', component: HighPerformComponent },
     { path: 'orderhp', component: OrderHPComponent },
-    { path: "hadoop", component: HadoopComponent }
+    { path: "hadoop", component: HadoopComponent },
+    { path: "orderhadoop", component: OrderHadoopComponent }
   ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
