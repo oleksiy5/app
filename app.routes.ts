@@ -9,6 +9,7 @@ import { OrderComponent } from './subpages/orderExercise/order.component';
 import { TermsComponent } from './subpages/termsuse/terms.component';
 import { HighPerformComponent } from './subpages/highperform/highperform.component';
 import { OrderHPComponent } from './subpages/highperform/orderHP/orderHP.component';
+import { HadoopComponent } from './subpages/hadoop/hadoop.component';
 
 export const routes: Routes = [
     { path: 'syntax', component: SyntaxComponent },
@@ -22,6 +23,7 @@ export const routes: Routes = [
     { path: '', component: HowLearnComponent },
     { path: 'highperform', component: HighPerformComponent },
     { path: 'orderhp', component: OrderHPComponent },
+    { path: "hadoop", component: HadoopComponent }
   ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

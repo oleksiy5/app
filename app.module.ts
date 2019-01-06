@@ -23,6 +23,7 @@ import { OrderComponent } from './subpages/orderExercise/order.component';
 import { TermsComponent } from './subpages/termsuse/terms.component';
 import { HighPerformComponent } from './subpages/highperform/highperform.component';
 import { OrderHPComponent } from './subpages/highperform/orderHP/orderHP.component';
+import { HadoopComponent } from './subpages/hadoop/hadoop.component';
 
 import {Pipe, PipeTransform, Component} from '@angular/core'
 import { DomSanitizer} from '@angular/platform-browser'
@@ -61,6 +62,7 @@ export class SafePipe implements PipeTransform {
     TermsComponent,
     HighPerformComponent,
     OrderHPComponent,
+    HadoopComponent,
   ],
   imports: [
     BrowserModule,
